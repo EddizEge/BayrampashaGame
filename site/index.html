@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bayrampaşa — arkadaşlarla açık dünya (test sürümü)</title>
+<meta name="description" content="Bayrampaşa'da geçen açık dünya: yaşayan şehir, Yeşilçam kafe, 101 Okey, arabalı futbol, mini oyunlar ve VPN'siz internet odaları. Ücretsiz test sürümü.">
+<meta name="theme-color" content="#0d0f1f">
+<meta property="og:title" content="Bayrampaşa — test sürümü">
+<meta property="og:description" content="Yaşayan şehir, Yeşilçam kafe, 101 Okey, arabalı futbol. Arkadaşlarla internet odaları, VPN gerekmez.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/simge.svg" type="image/svg+xml">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<header class="ust">
+  <a class="logo" href="#ana">BAYRAMPAŞA</a>
+  <nav class="menu" aria-label="Bölümler">
+    <a href="#oyun">Oyun</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kurulum">Kurulum</a>
+    <a href="#arkadaslar">Arkadaşlarla</a>
+    <a href="#guncelleme">Güncelleme</a>
+    <a href="#surumler">Sürümler</a>
+    <a href="#bildir">Hata bildir</a>
+    <a href="#sss">SSS</a>
+  </nav>
+  <a class="ust-indir" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">İndir</a>
+</header>
+
+<main>
+<!-- ============================================================ ANA SAYFA -->
+<section id="ana" class="kahraman">
+  <img class="kahraman-gorsel" src="img/hero.jpg" alt="Gece Bayrampaşa: ışıklı Yeşilçam kafe, arkada stadyum ve mahalleler" fetchpriority="high">
+  <div class="kahraman-ic">
+    <span class="rozet-test">TEST SÜRÜMÜ</span>
+    <h1>BAYRAMPAŞA</h1>
+    <p class="slogan">Mahallede dolaş, Yeşilçam'da çay iç, okey masasına otur, arabayla top oyna.
+      Arkadaşlarınla aynı şehirde, VPN'siz.</p>
+    <a class="indir-dugme" id="indir" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
+      <span class="indir-ust">İNDİR</span>
+      <span class="indir-alt"><span data-surum>OnlineV012</span> · Windows · başlatıcı <span data-exe-boyut>0,4 MB</span></span>
+    </a>
+    <p class="kahraman-not">İlk açılışta oyun (~1,2 GB) iner; sonraki güncellemeler küçük ve kendiliğinden.
+      Windows uyarı verirse: <b>Ek bilgi → Yine de çalıştır</b>.</p>
+    <p class="kahraman-not test-not">Test sürümü: hata görürsen oyunda <kbd>F2</kbd>'ye bas, bize gelsin.</p>
+  </div>
+</section>
+
+<!-- ============================================================ OYUN HAKKINDA -->
+<section id="oyun" class="bolum">
+  <h2>Oyun hakkında</h2>
+  <p class="giris">Bayrampaşa sokaklarında geçen, arkadaşlarla oynanan bir açık dünya. Şehir kendi kendine yaşıyor;
+    sen de istediğin köşede bir oyun başlatıyorsun. Kâr amacı gütmeyen bir arkadaş projesi, şu an test aşamasında.</p>
+  <div class="kartlar">
+    <article class="kart">
+      <img src="img/okul.jpg" alt="Okul bahçesinde oyuncu, arkada Bayrampaşa binaları" loading="lazy">
+      <h3>Yaşayan şehir</h3>
+      <p>Trafik, yürüyen insanlar, dükkânlar, polis, gece ve gündüz. Haritası gerçek Bayrampaşa'dan.</p>
+    </article>
+    <article class="kart">
+      <img src="img/yesilcam.jpg" alt="Yeşilçam kafenin oturma alanı, masalarda müşteriler" loading="lazy">
+      <h3>Yeşilçam kafe</h3>
+      <p>Garsonlar dolaşır, müşteriler gelir oturur. Çay ocağı, çiçekli duvar, eski film havası.</p>
+    </article>
+    <article class="kart">
+      <img src="img/okey.jpg" alt="101 Okey masası, ıstakalar ve taşlar" loading="lazy">
+      <h3>101 Okey</h3>
+      <p>Kafede masaya otur, dört kişi oyna. Kişi eksikse bot ekle; not defteri sayıları tutar.</p>
+    </article>
+    <article class="kart">
+      <img src="img/arabali-futbol.jpg" alt="Arabalı futbol stadyumu, top ve kale" loading="lazy">
+      <h3>Arabalı futbol</h3>
+      <p>Takviye, zıplama, havada takla, duvarda sürüş. Dolu tribünler, skor tabelası, iki takım.</p>
+    </article>
+    <article class="kart">
+      <img src="img/park.jpg" alt="Mahalle parkında salıncak ve kaydırak" loading="lazy">
+      <h3>Mini oyunlar</h3>
+      <p>Bomba Sende, Zemin Gidiyor, Çatı Kapışması, Mahalle Yakantopu, Eşya Saklambacı, Go-kart,
+        Polis – Hırsız, Metroya Yetiş ve dahası.</p>
+    </article>
+    <article class="kart">
+      <img src="img/oda-katilan.jpg" alt="Oyun menüsü: İnternet odasındasın, Bağlantı: doğrudan" loading="lazy" class="kart-menu">
+      <h3>İnternet odaları</h3>
+      <p>Biri oda kurar, diğerleri listeden katılır. Radmin, VPN, port açma, hesap yok. Odada en çok 12 kişi.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================ GALERİ -->
+<section id="galeri" class="bolum koyu">
+  <h2>Galeri</h2>
+  <div class="galeri">
+    <a href="img/aksam.jpg"><img src="img/aksam.jpg" alt="Akşam üstü şehir ve stadyum, yukarıdan" loading="lazy"></a>
+    <a href="img/yesilcam.jpg"><img src="img/yesilcam.jpg" alt="Yeşilçam kafenin içi" loading="lazy"></a>
+    <a href="img/stadyum.jpg"><img src="img/stadyum.jpg" alt="Arabalı futbol stadyumu ve skor tabelası" loading="lazy"></a>
+    <a href="img/okey.jpg"><img src="img/okey.jpg" alt="101 Okey masası" loading="lazy"></a>
+    <a href="img/sehir-gece.jpg"><img src="img/sehir-gece.jpg" alt="Gece ışıklı mahalleler" loading="lazy"></a>
+    <a href="img/futbol-araba.jpg"><img src="img/futbol-araba.jpg" alt="Sahada turuncu takımın arabası" loading="lazy"></a>
+    <a href="img/mahalle.jpg"><img src="img/mahalle.jpg" alt="Mahalle parkı ve apartmanlar" loading="lazy"></a>
+    <a href="img/cadde.jpg"><img src="img/cadde.jpg" alt="Dükkânlı cadde" loading="lazy"></a>
+    <a href="img/okul.jpg"><img src="img/okul.jpg" alt="Okul bahçesi, buluşma noktası" loading="lazy"></a>
+  </div>
+</section>
+
+<!-- ============================================================ KURULUM -->
+<section id="kurulum" class="bolum">
+  <h2>Kurulum, adım adım</h2>
+  <ol class="adimlar">
+    <li class="adim">
+      <div class="adim-yazi">
+        <h3>Başlatıcıyı indir</h3>
+        <p>Yukarıdaki <b>İNDİR</b> düğmesi küçük bir program verir: <code>Bayrampasa.exe</code>. Masaüstünde ya da Belgeler'de
+          <b>boş bir klasör</b> aç (ör. <code>Bayrampaşa</code>) ve dosyayı oraya koy. Oyun bu klasörün içine kurulur;
+          yönetici izni gerekmez.</p>
+      </div>
+      <div class="adim-gorsel"><a class="indir-dugme kucuk" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
+        <span class="indir-ust">İNDİR</span><span class="indir-alt">Bayrampasa.exe</span></a></div>
+    </li>
+    <li class="adim">
+      <div class="adim-yazi">
+        <h3>Windows uyarısını geç</h3>
+        <p>Program imzasız olduğu için Windows ilk açılışta mavi bir uyarı gösterebilir. Korkma, iki tık:</p>
+        <p class="yol"><span>“Windows bilgisayarınızı korudu”</span><i>→</i><span><b>Ek bilgi</b></span><i>→</i><span><b>Yine de çalıştır</b></span></p>
+        <p class="ince">Tarayıcı da “sık indirilmeyen dosya” diyebilir: indirilenlerde dosyanın yanındaki menüden <b>Sakla</b>.</p>
+      </div>
+    </li>
+    <li class="adim">
+      <div class="adim-yazi">
+        <h3>Başlatıcı oyunu indirir</h3>
+        <p>İlk açılışta oyun (~1,2 GB) iner. Pencerede indirilen MB, yüzde, hız ve kalan süre görünür. İnternet kesilirse
+          ya da pencereyi kapatırsan sorun yok: bir dahaki açılışta kaldığı yerden sürer. Her dosya doğrulanır.</p>
+      </div>
+      <figure class="adim-gorsel pencere"><img src="img/baslatici-indiriyor.png" alt="Başlatıcı penceresi: İndiriliyor, 848,9 / 1206,1 MB, yüzde 70, 28,5 MB/sn, kalan 12 sn" loading="lazy" width="568" height="287"></figure>
+    </li>
+    <li class="adim">
+      <div class="adim-yazi">
+        <h3>Masaüstü kısayolu</h3>
+        <p>Kurulum bitince başlatıcı masaüstüne <b>Bayrampaşa</b> kısayolu koyar. Oyunu hep bununla aç:
+          güncellemeler ancak böyle gelir.</p>
+      </div>
+    </li>
+    <li class="adim">
+      <div class="adim-yazi">
+        <h3>OYNA</h3>
+        <p>“Oyun güncel. İyi oyunlar!” yazınca <b>OYNA</b>'ya bas. İlk açılış biraz uzun sürebilir (gölgelendiriciler
+          hazırlanıyor). Menüde adını yaz, karakterini seç.</p>
+      </div>
+      <figure class="adim-gorsel pencere"><img src="img/baslatici-hazir.png" alt="Başlatıcı penceresi: Oyun güncel, OYNA düğmesi" loading="lazy" width="568" height="287"></figure>
+    </li>
+  </ol>
+</section>
+
+<!-- ============================================================ ARKADAŞLARLA -->
+<section id="arkadaslar" class="bolum koyu">
+  <h2>Arkadaşlarla oyna</h2>
+  <p class="giris">Hiçbir şey kurmanız gerekmez: VPN yok, Epic hesabı yok. Oyun açılınca internet odalarına kendiliğinden bağlanır.
+    Herkes aynı sürümde olmalı (başlatıcı bunu halleder).</p>
+  <div class="iki-sutun">
+    <div class="sutun">
+      <h3>Oda kuran (ev sahibi)</h3>
+      <ol class="kucuk-adim">
+        <li>Menüde <b>İNTERNETTE ODA KUR</b>'a bas.</li>
+        <li>Odan herkesin <b>ODALAR</b> listesinde senin adınla görünür.</li>
+        <li>Oyun içinde <kbd>F10</kbd> menüsünde odanın durumu yazar.</li>
+        <li>Windows Güvenlik Duvarı izin sorarsa <b>İzin ver</b> (vermezsen de çoğu zaman bağlanır).</li>
+      </ol>
+      <figure><img src="img/oda-evsahibi.jpg" alt="F10 menüsü: İnternet odan açık. Oyuncular 1/12. Arkadaşların ODALAR listesinde adını seçsin." loading="lazy"></figure>
+    </div>
+    <div class="sutun">
+      <h3>Katılan</h3>
+      <ol class="kucuk-adim">
+        <li>Menüdeki <b>ODALAR</b> listesinde arkadaşının adını bul. Liste kendiliğinden yenilenir; <b>YENİLE</b> hemen yeniler.</li>
+        <li><b>KATIL</b>'a bas. <span class="turuncu">Turuncu</span> satır = farklı sürüm: başlatıcıdan güncelle.</li>
+        <li><kbd>F10</kbd> menüsünde bağlantın yazar: <i>doğrudan</i> ya da <i>Epic aktarıcısı</i> (biraz daha yüksek ping).</li>
+      </ol>
+      <div class="ikili-gorsel">
+        <figure><img src="img/odalar.jpg" alt="Ana menü: ODALAR listesinde oda, KATIL düğmesi" loading="lazy"></figure>
+        <figure><img src="img/oda-katilan.jpg" alt="F10 menüsü: İnternet odasındasın, Bağlantı: doğrudan" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+  <p class="ince ortali">İnternet odaları açılmazsa eski yol: menüde <b>GELİŞMİŞ: IP İLE</b> (aynı ev ya da Radmin VPN).</p>
+</section>
+
+<!-- ============================================================ GÜNCELLEMELER -->
+<section id="guncelleme" class="bolum">
+  <h2>Güncellemeler nasıl geliyor?</h2>
+  <div class="uclu">
+    <div class="bilgi"><span class="bilgi-sayi">1</span><h3>Hep başlatıcıyla aç</h3>
+      <p>Masaüstündeki <b>Bayrampaşa</b> kısayolu ya da <code>Bayrampasa.exe</code>. <code>AstraGame.exe</code>'yi doğrudan açarsan güncelleme gelmez.</p></div>
+    <div class="bilgi"><span class="bilgi-sayi">2</span><h3>Kendiliğinden, küçük</h3>
+      <p>Açılışta son sürüme bakar, yalnız değişen parçaları indirir (ör. V012 → V013: 0,2 MB),
+        doğrular, sonra oyunu açar. Başlatıcı kendini de günceller.</p></div>
+    <div class="bilgi"><span class="bilgi-sayi">3</span><h3>Oyun açıkken yeni sürüm</h3>
+      <p>Odaya katılırken “Ev sahibi V013, sende V012 — başlatıcıdan güncelle” der. Oyunu kapat, başlatıcıyı aç.
+        Oyun içinde de “Yeni sürüm var” bildirimi geliyor.</p></div>
+  </div>
+  <p class="ince ortali">İnternet yoksa başlatıcı kurulu sürümle açar. Bir sorun olursa başlatıcıdaki <b>Dosyaları onar</b> her dosyayı denetler, bozuğu yeniden indirir.</p>
+</section>
+
+<!-- ============================================================ SÜRÜM NOTLARI -->
+<section id="surumler" class="bolum koyu">
+  <h2>Sürüm notları</h2>
+  <div id="surum-listesi" class="surum-listesi" aria-live="polite"></div>
+  <p class="ince ortali" id="surum-kaynak">Liste GitHub'dan canlı okunur.</p>
+  <script type="application/json" id="yedek-surumler">
+  [{"tag_name": "OnlineV012", "published_at": "2026-10-09T20:45:04Z",
+    "body": "İlk sürüm (7740): şehir, Yeşilçam, arabalı futbol, 101 Okey; internet odaları Radmin'siz (EOS); F2 hata bildirimi."}]
+  </script>
+</section>
+
+<!-- ============================================================ HATA BİLDİR -->
+<section id="bildir" class="bolum">
+  <h2>Hata ve istek bildir</h2>
+  <div class="iki-sutun">
+    <div class="sutun">
+      <h3>Bir hata mı gördün? <kbd>F2</kbd></h3>
+      <p>Oyunun içinde <kbd>F2</kbd>'ye bas, ne olduğunu bir iki cümleyle yaz, <b>Gönder</b>. O anın ekran görüntüsü,
+        oyunun son 3 dakikalık kaydı, konumun ve bilgisayar bilgisi (ekran kartı, bellek) bize gelir. İnternet yoksa
+        rapor bekler, bağlanınca gider.</p>
+      <p>Odadayken <kbd>F11</kbd>: sorun anını ev sahibinin kaydına işaretler.</p>
+      <h3>İstek / öneri</h3>
+      <p>Menüdeki <b>İSTEK / ÖNERİ</b> bölümünden yaz: “şu mekân olsun”, “şu oyun gelsin”… Hepsini okuyoruz.</p>
+    </div>
+    <figure class="sutun"><img src="img/f2.jpg" alt="Oyun içi HATA BİLDİR penceresi: açıklama kutusu, ekran görüntüsünü ekle, Gönder" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ============================================================ SİSTEM -->
+<section id="sistem" class="bolum koyu">
+  <h2>Sistem gereksinimi</h2>
+  <div class="tablo-kap">
+  <table class="tablo">
+    <tbody>
+      <tr><th>İşletim sistemi</th><td>Windows 10 / 11, 64 bit</td></tr>
+      <tr><th>Ekran kartı</th><td>DirectX 12 (Shader Model 6) destekleyen bir kart. Oyun bu kartta ~1 GB görüntü belleği kullandı (1600×900).</td></tr>
+      <tr><th>Bellek (RAM)</th><td>Oyun ~3–3,5 GB kullanıyor: 8 GB'lık bilgisayarda diğer programları kapat; 16 GB rahat.</td></tr>
+      <tr><th>Disk</th><td>Kurulu oyun 1,6 GB. Güncelleme hazırlanırken geçici yer de gerekir: en az 4 GB boş yer bırak.</td></tr>
+      <tr><th>İnternet</th><td>İlk kurulumda ~1,2 GB indirme. Oda oyunu için bağlantı yeter; port açma, VPN gerekmez.</td></tr>
+      <tr><th>Denendiği PC</th><td>Ryzen 7 5700X, RTX 4060 Ti 8 GB, 64 GB RAM. Daha zayıf bilgisayarlarda henüz denenmedi: sende nasıl
+        çalıştığını <kbd>F2</kbd> ile yazarsan çok işimize yarar. Ayarlar'dan grafik kalitesini düşürebilirsin.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ============================================================ SSS -->
+<section id="sss" class="bolum">
+  <h2>Sık sorulanlar</h2>
+  <div class="sss">
+    <details><summary>Windows “bilgisayarınızı korudu” diyor. Güvenli mi?</summary>
+      <p>Program imzasız (imza ücretli) ve az indirildiği için Windows uyarı veriyor. <b>Ek bilgi → Yine de çalıştır</b>.
+        Başlatıcı yalnız bu sitenin bağlı olduğu GitHub deposundan indirir ve her dosyayı SHA-256 ile doğrular.</p></details>
+    <details><summary>Güncellemeyi ben mi yapacağım?</summary>
+      <p>Hayır. Oyunu her zaman başlatıcıyla (masaüstündeki Bayrampaşa kısayolu) aç; yeni sürüm varsa kendiliğinden ve
+        yalnız değişen kısmı indirir.</p></details>
+    <details><summary>Arkadaşımın odasını listede göremiyorum.</summary>
+      <p>İkiniz de başlatıcıyla açıp aynı sürüme geçin; ODALAR'da <b>YENİLE</b>'ye basın. Ev sahibinin oyunu açık ve odada olmalı.
+        Hâlâ yoksa: menüde <b>GELİŞMİŞ: IP İLE</b> (aynı ev ya da Radmin VPN).</p></details>
+    <details><summary>Satır turuncu, “farklı sürüm” diyor.</summary>
+      <p>Biriniz eski sürümde. Oyunu kapatın, başlatıcıyı açın, güncellesin.</p></details>
+    <details><summary>F2 ile gönderdiğim rapor nereye gidiyor?</summary>
+      <p>Oyunun geliştiricisinin kendi sunucusuna. İçinde yazdığın açıklama, istersen ekran görüntüsü, oyunun son 3 dakikalık
+        kaydı, oyundaki konumun ve bilgisayar bilgisi (ekran kartı, bellek) var. Yalnız hataları bulmak için kullanılır.</p></details>
+    <details><summary>“Eksik bileşen” / VCRUNTIME hatası alıyorum.</summary>
+      <p>Oyun klasöründeki <code>Oyun\Engine\Extras\Redist\en-us\vc_redist.x64.exe</code> dosyasını bir kez kur, sonra yeniden aç.</p></details>
+    <details><summary>Oyun nereye kuruluyor, nasıl silerim?</summary>
+      <p><code>Bayrampasa.exe</code>'nin yanındaki <code>Oyun</code> klasörüne. Silmek için bütün klasörü ve masaüstü kısayolunu sil; başka bir yere bir şey yazılmaz.</p></details>
+    <details><summary>Oyun bir şey bozuldu gibi davranıyor.</summary>
+      <p>Başlatıcıda <b>Dosyaları onar</b>'a bas: bütün dosyaları doğrular, bozuk ya da eksik olanı yeniden indirir. Sonra <kbd>F2</kbd> ile anlat.</p></details>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================ ALT BİLGİ -->
+<footer class="alt">
+  <p class="alt-baslik">BAYRAMPAŞA <span class="rozet-test kucuk">TEST</span></p>
+  <p>Kâr amacı gütmeyen bir arkadaş projesi. Ücretsiz; reklam, satış, izleme yok.</p>
+  <p class="atif">Harita verisi © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> katkıcıları (ODbL).
+    Şehir, mobilya ve ses parçaları: <a href="https://www.kenney.nl">Kenney</a> (CC0). Animasyonlar: Quaternius (CC0), Mixamo.
+    Arabalı futbol araçları: “Fennec / Octane / Dominus – Rocket League Car”, Jako (sketchfab.com/fairlight51), CC BY 4.0 — hayran
+    modelleri; Psyonix ve Epic Games ile ilgisi yoktur. “Honda Civic Type-R”, shindedhirendra780, CC BY 4.0.
+    Unreal Engine ile yapıldı.</p>
+  <p class="atif"><a href="https://github.com/EddizEge/BayrampashaGame/releases">Bütün sürümler (GitHub)</a></p>
+</footer>
+
+<dialog id="buyut" class="buyut" aria-label="Görsel">
+  <img alt="">
+  <button class="buyut-kapat" aria-label="Kapat">×</button>
+  <button class="buyut-ok sol" aria-label="Önceki">‹</button>
+  <button class="buyut-ok sag" aria-label="Sonraki">›</button>
+</dialog>
+
+<script src="site.js" defer></script>
+</body>
+</html>
