@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yol haritası ve geliştirici notları — Bayrampaşa</title>
+<meta name="description" content="Bayrampaşa'yı sokak sokak gerçeğe benzetme planı: 8 bölge, yapılanlar, sıradakiler ve kısa geliştirici notları.">
+<meta name="theme-color" content="#0d0f1f">
+<meta property="og:title" content="Bayrampaşa — yol haritası">
+<meta property="og:description" content="Sokak sokak gerçek Bayrampaşa: yapılanlar, sıradakiler, geliştirici notları.">
+<meta property="og:image" content="img/yol-cadde.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/simge.svg" type="image/svg+xml">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body class="yh">
+
+<header class="ust">
+  <a class="logo" href="index.html">BAYRAMPAŞA</a>
+  <nav class="menu" aria-label="Bölümler">
+    <a href="index.html">Ana sayfa</a>
+    <a href="#harita">Yol haritası</a>
+    <a href="#siradaki">Sıradaki güncelleme</a>
+    <a href="#notlar">Geliştirici notları</a>
+    <a href="index.html#surumler">Sürüm notları</a>
+  </nav>
+  <a class="ust-indir" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">İndir</a>
+</header>
+
+<main>
+<!-- ============================================================ GİRİŞ -->
+<section class="bolum yh-giris" id="ust">
+  <span class="tabela">Bayrampaşa <small>· yol haritası</small></span>
+  <h1 class="yh-baslik">Sokak sokak<br>gerçek Bayrampaşa</h1>
+  <p class="giris">Oyunun haritası gerçek Bayrampaşa'dan. Şimdi sıra binalarda: her sokağı, cepheleri ve dükkânlarıyla
+    gerçeğine benzetiyoruz. Bu sayfa nereye gittiğimizi, neyin bittiğini ve sırada ne olduğunu anlatıyor.
+    Tarih vermiyoruz; sıra var.</p>
+  <ul class="yh-ozet" aria-label="Kısa durum">
+    <li><span class="nokta tamam"></span><b>2 / 8</b> bölge oyunda</li>
+    <li><span class="nokta tamam"></span><b>109</b> sokak, <b>~600</b> yeni bina</li>
+    <li><span class="nokta suruyor"></span><b>B3 ve B5</b> hazırlanıyor</li>
+    <li><span class="nokta"></span>Son sürüm <b>OnlineV018</b></li>
+  </ul>
+</section>
+
+<!-- ============================================================ YOL HARİTASI -->
+<section id="harita" class="bolum koyu">
+  <h2>Nereye gidiyoruz?</h2>
+  <p class="giris">Harita 8 bölgeye ayrıldı. Ana caddeler ve çarşı sokakları bina bina, gerçek dükkân adlarıyla yapılıyor;
+    ara konut sokakları bölgenin binalarına benzeyen hazır tiplerle dolduruluyor. Her bölge bitince oyuna bir güncelleme olarak gelir.</p>
+
+  <div class="yh-yol">
+    <ol class="asamalar">
+      <li>
+        <span class="asama-durum tamam">Tamam</span>
+        <div><h3>Deneme sokağı</h3><p>Hüsnüniyet Sokağı'nda yöntemi denedik: cepheler, vitrinler, tabelalar, parke taş.</p></div>
+      </li>
+      <li>
+        <span class="asama-durum tamam">V018'de</span>
+        <div><h3>Merkez: B1 + B2</h3><p>Hüsnüniyet çevresi, Demirkapı, Abdi İpekçi ve Hilal. 109 sokakta yaklaşık 600 yeni bina.</p></div>
+      </li>
+      <li>
+        <span class="asama-durum suruyor">Hazırlanıyor</span>
+        <div><h3>Öbür ana caddeler: B3 + B5</h3><p>Kenar ve İsmet Paşa; Yahya Kemal, Eti ve Uygur. Binalar hazırlanıyor.</p></div>
+      </li>
+      <li>
+        <span class="asama-durum sonra">Sonra</span>
+        <div><h3>B6, B7, B8 ve bütün konut sokakları</h3><p>Tuna, Sinop, Atışalanı, Kahraman, Uluhan, Hisar, Yeşil Cami. Bununla haritanın tamamı yenilenmiş olur.</p></div>
+      </li>
+      <li>
+        <span class="asama-durum sonra">En sonda</span>
+        <div><h3>Simge yapılar, gece, performans</h3><p>Okul, hastane, cami, belediye; gece ışıkları; bütün şehirde akıcılık.
+          Rami tarafı (B4) da en sona kaldı; oyunda şimdilik "yapım aşamasında" tabelalı.</p></div>
+      </li>
+    </ol>
+
+    <div class="bolgeler" aria-label="Bölgeler">
+      <article class="bolge tamam"><span class="tabela">B1</span><p>Hüsnüniyet çevresi, Şafak</p><span class="etiket">Oyunda</span></article>
+      <article class="bolge tamam"><span class="tabela">B2</span><p>Demirkapı, Abdi İpekçi, Hilal</p><span class="etiket">Oyunda</span></article>
+      <article class="bolge suruyor"><span class="tabela">B3</span><p>Kenar, İsmet Paşa</p><span class="etiket">Hazırlanıyor</span></article>
+      <article class="bolge suruyor"><span class="tabela">B5</span><p>Yahya Kemal, Eti, Uygur</p><span class="etiket">Hazırlanıyor</span></article>
+      <article class="bolge"><span class="tabela">B6</span><p>Tuna, Sinop</p><span class="etiket">Sonra</span></article>
+      <article class="bolge"><span class="tabela">B7</span><p>Atışalanı, Kahraman</p><span class="etiket">Sonra</span></article>
+      <article class="bolge"><span class="tabela">B8</span><p>Uluhan, Hisar, Yeşil Cami</p><span class="etiket">Sonra</span></article>
+      <article class="bolge"><span class="tabela">B4</span><p>Rami tarafı</p><span class="etiket">En sonda</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ SIRADAKİ GÜNCELLEME -->
+<section id="siradaki" class="bolum">
+  <h2>Sıradaki güncellemede düzelecekler</h2>
+  <p class="giris">Yeni merkezi gezerken gördüklerimiz. Hepsi listede; sıradaki güncellemeyle gelecek.</p>
+  <ul class="duzeltmeler">
+    <li><b>Yeşilçam'ın yanı</b><span>Kafenin çevresinde eskiden kalan binalar kaldırılacak; Yeşilçam hiçbir binayla çakışmadan duracak.</span></li>
+    <li><b>Binaların içinde kalan lamba ve direkler</b><span>Sokak lambaları, tabela direkleri kaldırıma geri alınacak.</span></li>
+    <li><b>Eski dükkânlardan kalan parçalar</b><span>Yeni binaların önünde ya da içinde görünen eski tabela ve vitrin parçaları gidecek.</span></li>
+    <li><b>Zemin</b><span>Eski yol parçaları, kaldırım birleşimleri ve yaya geçitleri yeni sokaklara uyacak.</span></li>
+    <li><b>Köşede kaldırıma park eden arabalar</b><span>Arabalar yola park edecek, köşeleri boş bırakacak.</span></li>
+  </ul>
+  <p class="ince">Başka bir şey gördün mü? Oyunda <kbd>F2</kbd>'ye bas; ekran görüntüsü ve kısa açıklamayla bize gelir.</p>
+</section>
+
+<!-- ============================================================ GELİŞTİRİCİ NOTLARI -->
+<section id="notlar" class="bolum koyu">
+  <h2>Geliştirici notları</h2>
+  <p class="giris">Kısa kısa, ne yaptık, ne gördük.</p>
+  <div class="gunluk">
+    <article class="not">
+      <img src="img/yol-cadde.jpg" alt="Abdi İpekçi Caddesi'nde yan yana dükkânlar ve apartmanlar" loading="lazy">
+      <div class="not-ic">
+        <time datetime="2026-10-11">11 Ekim 2026</time>
+        <h3>Merkez yenilendi</h3>
+        <p>B1 ve B2 açıldı: Hüsnüniyet'ten Demirkapı'ya, Abdi İpekçi'den Hilal'e 109 sokak, yaklaşık 600 bina. Binalar kaldırıma
+          yanaşık, sokaklar parke ve küp taş.</p>
+      </div>
+    </article>
+    <article class="not">
+      <img src="img/yol-dukkan.jpg" alt="Demirkapı Caddesi'nde kuyumcu tabelalı bir apartman" loading="lazy">
+      <div class="not-ic">
+        <time datetime="2026-10-11">11 Ekim 2026</time>
+        <h3>Gerçek dükkân adları</h3>
+        <p>Tabelalarda sokaktaki gerçek dükkânların adları var, düz yazıyla. Her dükkânın vitrini, tentesi,
+          kapısı ayrı. Kendi mahalleni tanıyabiliyor musun?</p>
+      </div>
+    </article>
+    <article class="not">
+      <img src="img/yol-gece.jpg" alt="Gece Yeşilçam kafenin terası, çevredeki binaların pencerelerinde ışık" loading="lazy">
+      <div class="not-ic">
+        <time datetime="2026-10-11">11 Ekim 2026</time>
+        <h3>Gece pencereleri</h3>
+        <p>Gece olunca üst katlarda pencereler tek tek yanıyor. Şehir gece de yaşıyor gibi.</p>
+      </div>
+    </article>
+    <article class="not">
+      <img src="img/f2.jpg" alt="Oyundaki F2 hata bildirme penceresi" loading="lazy">
+      <div class="not-ic">
+        <time datetime="2026-10-11">11 Ekim 2026</time>
+        <h3>Arkadaş testi başladı: F2'ye bas</h3>
+        <p>Takıldığın, havada duran, içinden geçtiğin bir şey mi var? <kbd>F2</kbd>'ye bas, bir cümle yaz. Ekran görüntüsü ve
+          oyunun durumu da gelir; raporlar doğrudan bize ulaşıyor. Oyun çökerse başlatıcı da rapor göndermeyi sorar.</p>
+      </div>
+    </article>
+  </div>
+  <p class="ortali"><a class="indir-dugme kucuk" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
+    <span class="indir-ust">İNDİR</span><span class="indir-alt">Windows · güncellemeler kendiliğinden</span></a></p>
+</section>
+</main>
+
+<footer class="alt">
+  <p class="alt-baslik">BAYRAMPAŞA <span class="rozet-test kucuk">TEST</span></p>
+  <p>Kâr amacı gütmeyen bir arkadaş projesi. Ücretsiz; reklam, satış, izleme yok.</p>
+  <p class="atif">Harita verisi © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> katkıcıları (ODbL).
+    Bu sayfadaki görüntüler oyunun kendi kareleri. Unreal Engine ile yapıldı.</p>
+  <p class="atif"><a href="index.html">Ana sayfa</a> · <a href="https://github.com/EddizEge/BayrampashaGame/releases">Bütün sürümler (GitHub)</a></p>
+</footer>
+</body>
+</html>

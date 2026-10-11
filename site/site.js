@@ -1,5 +1,6 @@
-// Bayrampaşa sitesi: son sürüm adı / başlatıcı boyutu ve sürüm notları GitHub'dan canlı (api.github.com CORS'a açık).
-// Ulaşılamazsa sayfadaki gömülü yedek liste. İzleme / çerez yok.
+// Bayrampaşa sitesi: son sürüm adı / başlatıcı boyutu GitHub'dan canlı (api.github.com CORS'a açık). Sürüm notları önce sitenin
+// kendi guncelleme_notlari.json'undan (başlatıcı ve oyunun okuduğu dosyanın taslaksız kopyası; Site-Yayinla.ps1 koyar), yoksa
+// GitHub sürüm açıklamalarından, o da yoksa sayfadaki gömülü yedek listeden. İzleme / çerez yok.
 (function () {
   "use strict";
   var DEPO = "EddizEge/BayrampashaGame";
@@ -30,6 +31,32 @@
     if (kaynak) kaynak.textContent = canli ? "Liste GitHub'dan canlı okunuyor." : "GitHub'a şu an ulaşılamadı; kayıtlı liste gösteriliyor.";
   }
 
+  // guncelleme_notlari.json: {"surumler": [{"surum", "tarih", "baslik", "maddeler": [], "taslak"?}]} (biçim: başlatıcının notları)
+  var notlarVar = false;
+  function notlariYaz(j) {
+    var kap = document.getElementById("surum-listesi");
+    var liste = (j && j.surumler || []).filter(function (s) { return s && s.surum && !s.taslak; });
+    if (!kap || !liste.length) return false;
+    kap.textContent = "";
+    liste.forEach(function (s, i) {
+      var k = el("article", "surum");
+      var bas = el("div", "surum-bas");
+      bas.appendChild(el("span", "surum-ad", String(s.surum).replace(/^Online/, "")));
+      if (s.tarih) bas.appendChild(el("span", "surum-tarih", tarih(s.tarih + "T12:00:00Z")));
+      if (i === 0) bas.appendChild(el("span", "surum-son", "SON SÜRÜM"));
+      k.appendChild(bas);
+      if (s.baslik) k.appendChild(el("h3", "surum-baslik", s.baslik));
+      var ul = el("ul", "surum-maddeler");
+      (s.maddeler || []).forEach(function (m) { ul.appendChild(el("li", null, m)); });   // (textContent: HTML yorumlanmaz)
+      k.appendChild(ul);
+      kap.appendChild(k);
+    });
+    var kaynak = document.getElementById("surum-kaynak");
+    if (kaynak) kaynak.textContent = "Başlatıcıda ve oyunun ana menüsünde de aynı notlar görünür.";
+    notlarVar = true;
+    return true;
+  }
+
   function sonSurum(r) {
     document.querySelectorAll("[data-surum]").forEach(function (e) { e.textContent = r.name || r.tag_name; });
     var exe = (r.assets || []).filter(function (a) { return a.name === "Bayrampasa.exe"; })[0];
@@ -40,6 +67,11 @@
   try { yedek = JSON.parse(document.getElementById("yedek-surumler").textContent); } catch (e) {}
   surumleriYaz(yedek, false);
   if (window.fetch) {
+    fetch("guncelleme_notlari.json", { cache: "no-cache" })
+      .then(function (y) { if (!y.ok) throw new Error(y.status); return y.json(); })
+      .then(notlariYaz)
+      .catch(function () { /* GitHub açıklamaları ya da yedek liste */ });
+
     var iptal = window.AbortController ? new AbortController() : null;
     var sure = setTimeout(function () { if (iptal) iptal.abort(); }, 8000);
     fetch(API, { headers: { Accept: "application/vnd.github+json" }, signal: iptal ? iptal.signal : undefined })
@@ -48,7 +80,7 @@
         clearTimeout(sure);
         if (!Array.isArray(liste) || !liste.length) return;
         var yayinda = liste.filter(function (r) { return !r.draft && !r.prerelease; });
-        if (yayinda.length) { sonSurum(yayinda[0]); surumleriYaz(yayinda, true); }
+        if (yayinda.length) { sonSurum(yayinda[0]); if (!notlarVar) surumleriYaz(yayinda, true); }
       })
       .catch(function () { /* yedek liste kalır */ });
   }

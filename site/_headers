@@ -1,8 +1,8 @@
-# Cloudflare Pages: güvenlik başlıkları ve önbellek (izleme / çerez yok; dış kaynak yalnız api.github.com)
+# Cloudflare Pages: güvenlik başlıkları ve önbellek (izleme / çerez yok; dış kaynak yalnız api.github.com; notlar sitenin kendi dosyası)
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src https://api.github.com; frame-ancestors 'none'; base-uri 'self'; form-action 'none'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self' https://api.github.com; frame-ancestors 'none'; base-uri 'self'; form-action 'none'
 /img/*
   Cache-Control: public, max-age=604800

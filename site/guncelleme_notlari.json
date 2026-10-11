@@ -1,0 +1,83 @@
+{
+    "surumler":  [
+                     {
+                         "surum":  "OnlineV018",
+                         "tarih":  "2026-10-11",
+                         "baslik":  "Bayrampaşa\u0027nın merkezi yenilendi",
+                         "maddeler":  [
+                                          "Hüsnüniyet, Demirkapı, Abdi İpekçi, Hilal, Şafak, Üsküp ve Şar çevresi baştan yapıldı: 109 sokakta yaklaşık 600 yeni bina; Yeşilçam ve oyun mekânları yerinde",
+                                          "Gerçek dükkân adlarıyla tabelalar ve vitrinler; eski dükkân tabelaları yeni binalarla çakışmaz",
+                                          "Sokaklar parke ve küp taş, kaldırım babalarıyla; park korkuluklarına ve babalara takılma düzeldi",
+                                          "Gece üst kat pencerelerinde ışık yanar",
+                                          "Dükkân kapılarının önü boş: araba park etmez, yaya beklemez",
+                                          "Şehirde dükkânların içi türüne göre: optik, mobilya, çiçekçi, hırdavat, kırtasiye ve daha fazlası",
+                                          "Trafik daha düzgün: kavşakta üst üste binen arabalar ve yaya geçidi hataları azaldı; polis ateşinden sonra sokak hemen sakinleşir",
+                                          "Arkadaş oturumunda yürüme ve araba daha akıcı; kafe masaları herkeste aynı yerde",
+                                          "Sesler daha yüksek ve dengeli; ayarlardaki Genel ses kaydırıcısı her şeyi birlikte açıp kısar",
+                                          "Ana menüde ve F10\u0027da güncelleme notları; yeni sürüm uyarısı kapatılabilir",
+                                          "Oyun çökerse başlatıcı hata raporu göndermeyi sorar; oyunda F2 ile hata bildirebilirsin",
+                                          "Başlatıcı yenilendi: oyundan kareler, güncelleme notları ve büyük OYNA düğmesi"
+                                      ]
+                     },
+                     {
+                         "surum":  "OnlineV015",
+                         "tarih":  "2026-10-10",
+                         "baslik":  "İlk arkadaş testinin düzeltmeleri",
+                         "maddeler":  [
+                                          "Düşme hasarı: 3 metreye kadar bir şey olmaz, yükseldikçe artar",
+                                          "Yolcu koltuğu: arkadaşının arabasına B ile binebilirsin",
+                                          "Araç çağırma düzeldi: yakındaki arabaya kendiliğinden binmez, bina içinde çağrılmaz, çukura düşen araç sokağa döner",
+                                          "Arabalı futboldan çıkınca şehrin altına düşme düzeldi",
+                                          "Tur sürerken bot eklenip çıkarılamaz",
+                                          "Yeşilçam\u0027da merdiven duvarının içinden geçilmez",
+                                          "Okey defterinde uzun isimler sığar"
+                                      ]
+                     },
+                     {
+                         "surum":  "OnlineV014",
+                         "tarih":  "2026-10-10",
+                         "baslik":  "Hata bildir ve yeni sürüm uyarısı",
+                         "maddeler":  [
+                                          "Açılışta oyunu tanıtan bir kart",
+                                          "Menüde HATA BİLDİR ve İSTEK / ÖNERİ; F2 menü açıkken de çalışır, raporlar internetten bize gelir",
+                                          "Yeni sürüm çıkınca oyunda uyarı ve ŞİMDİ GÜNCELLE düğmesi",
+                                          "Başlatıcı masaüstüne kısayol koyar",
+                                          "Yeşilçam\u0027da silah sesinde insanlar ateşin arkasına saklanır; polis binaya girip seni arar"
+                                      ]
+                     },
+                     {
+                         "surum":  "OnlineV012",
+                         "tarih":  "2026-10-09",
+                         "baslik":  "İlk sürüm: başlatıcıyla kurulum",
+                         "maddeler":  [
+                                          "Oyun artık Bayrampasa.exe ile kurulur ve kendiliğinden güncellenir",
+                                          "Arkadaşlarla internetten oda kur ve katıl; Radmin gerekmez",
+                                          "F2 ile hata bildirimi: ekran görüntüsü ve kısa açıklama",
+                                          "Şehir yaşıyor: trafik, yayalar, polis, dükkânlar, gece ve gündüz",
+                                          "Yeşilçam kafesi, 101 Okey masaları, arabalı futbol ve diğer mini oyunlar"
+                                      ]
+                     },
+                     {
+                         "surum":  "OnlineV011",
+                         "tarih":  "2026-10-09",
+                         "baslik":  "Parklar dolu",
+                         "maddeler":  [
+                                          "Beş park gerçeğine bakılarak dolduruldu: oyun parkları, banklar, çay bahçeleri",
+                                          "Arabalı futbolda topun yere düşeceği yer halkayla gösterilir",
+                                          "Kafeler daha çabuk dolar, ikinci garson geldi",
+                                          "Arkadaş oturumunda yayalar ve arabalar daha düzgün hareket eder"
+                                      ]
+                     },
+                     {
+                         "surum":  "OnlineV010",
+                         "tarih":  "2026-10-09",
+                         "baslik":  "Gece düzeltmeleri",
+                         "maddeler":  [
+                                          "Yeşilçam kafesi ve garson; silah sesinde insanlar kaçar, içeridekiler çıkışa koşar",
+                                          "Okey sandalyelerine yoldan geçenler oturmaz",
+                                          "Arabalı futbol: santra saati, uzatma, gol tekrarı ve maç sonu kürsüsü",
+                                          "Dar yerlerde kamera omza kalkar, silahlı bakışta kolun içi görünmez"
+                                      ]
+                     }
+                 ]
+}
