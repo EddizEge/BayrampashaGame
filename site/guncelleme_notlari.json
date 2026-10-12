@@ -1,6 +1,32 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV019",
+                         "tarih":  "2026-10-12",
+                         "baslik":  "Gol patlaması ve arkadaş testinin düzeltmeleri",
+                         "maddeler":  [
+                                          "Arabalı Futbol\u0027da gol patlaması: atan takımın renginde patlama ve kalenin iki yanından süzülen iki ejder",
+                                          "Arabalı Futbol botları kendi kalesine daha az gol atıyor",
+                                          "Birinci şahıstan arabaya binip üçüncü şahsa geçince karakterin kafası artık kaybolmuyor",
+                                          "Civic\u0027te yan koltuktaki yolcu görünüyor; yolcu da V ile iç kameraya geçebilir",
+                                          "Yerdeyken arabaya binilemez",
+                                          "Sokak Kart: HOME (son kapıya dön) artık kartı hasarlandırmıyor; patlayan kart son kapıda yenilenir",
+                                          "Sokak Kart\u0027ta yarışın başlangıcını ve kapıları trafik kapatmıyor",
+                                          "101 Okey: botsuz masa seçeneği (4 kişi bekler), sağ fareyle etrafa bakış; bot okeyle de bitirebilir",
+                                          "Arkadaş oturumunda arabalar daha az sıçrar: bağlantı takılınca araba kayarak yerine geçer",
+                                          "İlk açılışta grafik kalitesi bilgisayarına göre otomatik seçilir (en çok Yüksek; menüden değiştirebilirsin)",
+                                          "Düşük ve orta grafik ayarında şehir daha hafif: yayalar ve arabalar daha yakında çizilir",
+                                          "Sokak zemininde eski yol parçaları, kaldırım birleşimleri ve yaya geçitleri düzeldi",
+                                          "Sokak lambaları, trafik ışıkları ve tabela direkleri binaların içinden çıktı; eski dükkân artıkları kalktı",
+                                          "Zemin kurulurken olan takılma azaldı",
+                                          "Yaya animasyonundan kaynaklanan kısa donma giderildi",
+                                          "Yeşilçam\u0027ın terasından ve yeni binaların duvarlarından çatıya tırmanılamıyor (çit ve bariyerlerde tırmanma yine çalışıyor)",
+                                          "Yeşilçam\u0027ın yanındaki eski binaların yerine Demirkapı Caddesi\u0027ne bakan yeni binalar geldi; çatı kuleleri artık binalardan taşmıyor",
+                                          "Bazı camlar gri görünüyordu, düzeldi",
+                                          "F2 hata bildirimi artık grafik ayarını ve FPS bilgisini de gönderir; düşük FPS\u0027in nedenini bulmamıza yardım eder"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV018",
                          "tarih":  "2026-10-11",
                          "baslik":  "Bayrampaşa\u0027nın merkezi yenilendi",
