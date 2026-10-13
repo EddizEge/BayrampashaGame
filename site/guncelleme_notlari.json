@@ -1,6 +1,33 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV021",
+                         "tarih":  "2026-10-14",
+                         "baslik":  "Okullar, hastaneler, camiler, parklar ve yeni sokaklar",
+                         "maddeler":  [
+                                          "Okullar, hastaneler, stat, camiler, parklar ve benzin istasyonları gerçeğine benzer şekilde baştan yapıldı: bahçe duvarları, kapılar, avlular, ağaçlar, tabelalar (31 yer)",
+                                          "Okullar: Suat Terimer, Kız Meslek, Özel Bayrampaşa Koleji, Tuna, Hüseyin Bürge, Yahya Kemal, Nail Reşit, Ahmet Haşim. Sağlık: Devlet Hastanesi, Göz Hastanesi, Karaca Klinik",
+                                          "Camiler: Merkez, Yeşil, Orta, Altıntepsi, Hayırseverler. Parklar: Atatürk, Sadık Hoca Parkı, İsmet Paşa, Yahya Kemal, Şair Erdoğan Ertürk, Şehit Zafer, Şehit Serkan Yılmaz, Sabri Akpınar",
+                                          "Çetin Emeç Stadı, Arda Turan Tesisleri, Spor Kompleksi, Belediye, Bilgi İşlem ve Shell / PO istasyonları da yenilendi; Arabalı Futbol girişleri otoparkta yerinde",
+                                          "Rami dışındaki bütün bölgelerde gerçek sokaklar: yeni binalar, cepheler (sıva ve beton), dükkân vitrinleri, zemin kat pencereleri; birçok dükkânın içine girilebiliyor",
+                                          "Binaların arasındaki boş levhalar, moloz arsalar ve beyaz düzlükler gerçek zeminle kaplandı; yollar tek tip asfalt",
+                                          "Harita temizlendi: eski binalar, eski çitler ve duvarlar, yarım kalmış parçalar kalktı; titreşen yüzeyler, zemin delikleri ve iç içe geçen yol ve kaldırımlar düzeldi",
+                                          "Özel alanların çevresine kaldırım geldi (eski beyaz parçalar kalktı); site ve yol kenarlarındaki eski turuncu duvarlar yerine yenileri",
+                                          "Yaşayan şehir yeni binalara uydu: lambalar, tabelalar ve şehir eşyaları binalardan çıktı, yayalar binaların içinde doğmuyor, trafik yeni kaldırımları tanıyor",
+                                          "F2 ile bildirilen hataların çoğu düzeldi",
+                                          "Büyük harita (M): sokak adları, oyun girişleri, önemli yapılar ve arkadaşların; haritaya işaret koyarsan mini harita yolu gösterir",
+                                          "Oyuncu isimleri: yeni gördüğün oyuncunun adı birkaç saniye, baktığın oyuncunun adı her zaman görünür; arabadayken aracın üstünde. Ayarlar\u0027dan açılıp kapanır",
+                                          "Yeni arayüz: menüler, ayarlar, oyun içi yazılar ve mini oyun ekranları tek görünümde, daha okunaklı ve yeni yazı tipiyle; başlatıcı da aynı görünümde",
+                                          "ESC menüyü açar (F10 da çalışır), F1 bütün tuşları gösterir; ekranda yalnız o an işine yarayan tuşlar",
+                                          "Grafik ve ekran ayarları Uygula\u0027ya basınca değişir; yeni çözünürlüğü 10 saniye içinde onaylamazsan eskisine döner",
+                                          "İlk açılıştaki otomatik grafik kalitesi ölçümü oyunu yavaşlatmıyor; ölçüm sürerken kendin seçersen senin seçimin geçerli",
+                                          "Arkadaş oturumunda bir oyuncunun bağlantısı koparsa oda artık kapanmıyor",
+                                          "Mini oyunlar şimdilik üç: Sokak Kart, Arabalı Futbol ve 101 Okey. Arabalı Futbol\u0027un girişi stadyum otoparkına, Sokak Kart\u0027ın yanına taşındı; girişlerde yeni tabela",
+                                          "Arabalı Futbol: kalenin içi kavisli (köşede takılmazsın), gol tekrarı daha iyi açıdan, gol ejderi daha alçaktan uçuyor ve kutlama daha uzun; TAB tablosundaki titreme düzeldi",
+                                          "Şehir daha akıcı: uzaktaki küçük eşyalar ve yayalar daha hafif çiziliyor"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV019",
                          "tarih":  "2026-10-12",
                          "baslik":  "Gol patlaması ve arkadaş testinin düzeltmeleri",
