@@ -112,10 +112,10 @@
   <ol class="adimlar">
     <li class="adim">
       <div class="adim-yazi">
-        <h3>Başlatıcıyı indir</h3>
-        <p>Yukarıdaki <b>İNDİR</b> düğmesi küçük bir program verir: <code>Bayrampasa.exe</code>. Masaüstünde ya da Belgeler'de
-          <b>boş bir klasör</b> aç (ör. <code>Bayrampaşa</code>) ve dosyayı oraya koy. Oyun bu klasörün içine kurulur;
-          yönetici izni gerekmez.</p>
+        <h3>Başlatıcıyı indir ve aç</h3>
+        <p>Yukarıdaki <b>İNDİR</b> düğmesi küçük bir program verir: <code>Bayrampasa.exe</code>. İndiği yerden (ör. İndirilenler)
+          açman yeterli: oyun kendini <code>C:\Program Files\Bayrampasa</code> klasörüne kurar, masaüstüne ve Başlat menüsüne
+          <b>Bayrampaşa</b> kısayolu koyar.</p>
       </div>
       <div class="adim-gorsel"><a class="indir-dugme kucuk" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
         <span class="indir-ust">İNDİR</span><span class="indir-alt">Bayrampasa.exe</span></a></div>
@@ -126,6 +126,11 @@
         <p>Program imzasız olduğu için Windows ilk açılışta mavi bir uyarı gösterebilir. Korkma, iki tık:</p>
         <p class="yol"><span>“Windows bilgisayarınızı korudu”</span><i>→</i><span><b>Ek bilgi</b></span><i>→</i><span><b>Yine de çalıştır</b></span></p>
         <p class="ince">Tarayıcı da “sık indirilmeyen dosya” diyebilir: indirilenlerde dosyanın yanındaki menüden <b>Sakla</b>.</p>
+        <p><b>Windows yönetici izni sorarsa “Evet” de.</b> Başlatıcı “Bayrampaşa şuraya kurulacak” der, sonra Windows
+          “Bu uygulamanın cihazınızda değişiklik yapmasına izin vermek istiyor musunuz?” diye sorar (yayımcı: bilinmiyor).
+          Yalnız ilk kurulumda bir kez sorar: Program Files'ta oyunun klasörünü açmak için. Oyun ve başlatıcı yönetici olarak çalışmaz.</p>
+        <p class="ince">Oyun zaten kuruluysa başlatıcı bir kez “Program Files'a taşınsın mı?” diye sorar: Evet, sonra Windows'a Evet.
+          Hiçbir şey yeniden inmez; ayarların, kayıtların ve masaüstü kısayolun taşınır. “Hayır” dersen oyun bugünkü yerinde çalışır.</p>
       </div>
     </li>
     <li class="adim">
@@ -140,8 +145,8 @@
     <li class="adim">
       <div class="adim-yazi">
         <h3>Masaüstü kısayolu</h3>
-        <p>Kurulum bitince başlatıcı masaüstüne <b>Bayrampaşa</b> kısayolu koyar. Oyunu hep bununla aç:
-          güncellemeler ancak böyle gelir.</p>
+        <p>Kurulum bitince başlatıcı masaüstüne ve Başlat menüsüne <b>Bayrampaşa</b> kısayolu koyar. Oyunu hep bununla aç:
+          güncellemeler ancak böyle gelir. İndirdiğin <code>Bayrampasa.exe</code>'yi silebilirsin (açarsan da kurulu oyunu açar).</p>
       </div>
     </li>
     <li class="adim">
@@ -269,9 +274,10 @@
       <p>Oyunun geliştiricisinin kendi sunucusuna. İçinde yazdığın açıklama, istersen ekran görüntüsü, oyunun son 3 dakikalık
         kaydı, oyundaki konumun ve bilgisayar bilgisi (ekran kartı, bellek) var. Yalnız hataları bulmak için kullanılır.</p></details>
     <details><summary>“Eksik bileşen” / VCRUNTIME hatası alıyorum.</summary>
-      <p>Oyun klasöründeki <code>Oyun\Engine\Extras\Redist\en-us\vc_redist.x64.exe</code> dosyasını bir kez kur, sonra yeniden aç.</p></details>
+      <p><code>C:\Program Files\Bayrampasa\Oyun\Engine\Extras\Redist\en-us\vc_redist.x64.exe</code> dosyasını bir kez kur, sonra yeniden aç.</p></details>
     <details><summary>Oyun nereye kuruluyor, nasıl silerim?</summary>
-      <p><code>Bayrampasa.exe</code>'nin yanındaki <code>Oyun</code> klasörüne. Silmek için bütün klasörü ve masaüstü kısayolunu sil; başka bir yere bir şey yazılmaz.</p></details>
+      <p><code>C:\Program Files\Bayrampasa</code> klasörüne. Silmek için Windows <b>Ayarlar → Uygulamalar → Bayrampaşa → Kaldır</b>:
+        oyun, ayarları, kayıtları ve kısayolları silinir.</p></details>
     <details><summary>Oyun bir şey bozuldu gibi davranıyor.</summary>
       <p>Başlatıcıda <b>Dosyaları onar</b>'a bas: bütün dosyaları doğrular, bozuk ya da eksik olanı yeniden indirir. Sonra <kbd>F2</kbd> ile anlat.</p></details>
   </div>
