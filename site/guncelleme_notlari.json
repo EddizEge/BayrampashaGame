@@ -1,6 +1,28 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV023",
+                         "tarih":  "2026-10-16",
+                         "baslik":  "Akıcı sürüş, DLSS / FSR ve temizlenen sokaklar",
+                         "maddeler":  [
+                                          "Araba sürerken ve haritada hızlı giderken olan takılmalar büyük ölçüde azaldı (sokak lambalarının yerleşimi artık oyunu durdurmuyor); hızlı giderken kameranın ve arabanın titremesi azaldı",
+                                          "Açılış: şehir hazırlanırken oyunun saniyelerce donduğu uzun kareler küçük parçalara bölündü (yükleme ekranında en uzun takılma birkaç saniyeye indi); ilk açılıştaki otomatik görüntü ayarı ölçümü artık şehrin kurulumuyla aynı anda çalışmıyor",
+                                          "Ayarlar\u0027da görüntü ölçekleme: TSR, NVIDIA DLSS ve AMD FSR (Kalite / Denge / Performans); RTX 40 ve üstünde DLSS ara kare; düşük gecikme için NVIDIA Reflex, AMD kartta Anti-Lag 2. Kartının desteklemediği seçenek görünmez",
+                                          "AMD ekran kartında denenmedi (FSR 4, Anti-Lag 2): görüntüde ya da gecikmede sorun olursa Ayarlar\u0027da Görüntü ölçekleme\u0027yi TSR yap ve F2 ile bildir",
+                                          "Ayarlar\u0027da DLSS ara kare açıkken görüntü ayarı değiştirince ya da tam ekrandan çıkınca oyunun kapanması düzeldi; ara kare açıkken özel Tam ekran şimdilik seçilemiyor (Kenarsız pencere kullan)",
+                                          "Yollar dokulu asfalt; üst üste binen yüzeylerin titremesi büyük ölçüde gitti, doğudaki renkli desen yerine düz asfalt",
+                                          "Yol çizgileri: kavşakların ortasından geçen kesik şerit çizgileri kalktı",
+                                          "Kaldırımlar baştan yapıldı: binadan bordüre tek tip gri parke ve gri bordür, yüzey düzlendi (dalgalı / tümsekli yerler büyük ölçüde gitti), iki tonlu parke kalmadı, eski ve yeni dokular artık iç içe değil; cami, park ve refüj önlerindeki beyaz şeritler kalktı (birkaç köşede kenar hâlâ düzgün değil); dar kaldırımlar genişledi (yollar daraltılmadan), yayalar kaldırımın tamamını kullanıyor ve dar yerlerde daha az sıkışıyor; sokak lambaları yolu kapatmıyor",
+                                          "Bayrampaşa Devlet Hastanesi baştan yapıldı: taş döşemeli avlular, bordürlü kaldırımlar, bahçe duvarı ve korkuluk, otopark, acil girişi ve iki bina arasındaki köprü; ambulans artık havada durmuyor",
+                                          "Okullar: bahçe duvarları ve kapı direkleri yere oturdu; Tuna, Suat Terimer ve Nail Reşit\u0027in avlusu binaya göre yenilendi, Tuna\u0027ya kort, Hüseyin Bürge\u0027nin sahası düzeldi; Kız Meslek Lisesi\u0027nin avlusu gerçeğe göre",
+                                          "Çetin Emeç Stadı\u0027nın otoparkı düz asfalt ve düzenli park çizgileriyle; stadın duvarları zemine oturdu",
+                                          "Parklar: Şair Erdoğan Ertürk, Yahya Kemal, Sabri Akpınar ve Şehit Serkan Yılmaz parklarının yol kenarına kaldırım bandı; havada duran ağaçlar yere indi, Sabri Akpınar\u0027ın çimi düzeldi, güney girişi sokakla aynı kotta yumuşak bir rampa",
+                                          "Sokaklar: boş vitrinler doldu, aynı dükkân iki binada çıkmıyor; dükkân kapılarına eşik ve basamak geldi, eşikler kaldırıma oturdu (havada ya da gömülü eşik kalmadı), daha çok dükkânın içi görünüyor; kaldırımın altında kalan zemin kat pencereleri bodrum penceresi oldu; Yeşilçam\u0027ın yanındaki dolgu binaları düzeldi; Bayrampaşa\u0027nın güneyinde bina çevreleri taş döşemeli, düşülecek boşluk kalmadı",
+                                          "Yol kenarındaki eski turuncu duvarlar yenilendi, köprü bariyerleri köprünün üstüne oturdu; KİPTAŞ girişleri açık meydan, Spor Kompleksi\u0027nin önünde kesintisiz kaide ve korkuluk",
+                                          "NVIDIA, DLSS ve Reflex NVIDIA Corporation\u0027ın; AMD, FidelityFX ve Anti-Lag Advanced Micro Devices, Inc.\u0027in ticari markalarıdır. Lisans metinleri oyun klasöründe: Oyun/Lisanslar"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV021",
                          "tarih":  "2026-10-14",
                          "baslik":  "Okullar, hastaneler, camiler, parklar ve yeni sokaklar",
