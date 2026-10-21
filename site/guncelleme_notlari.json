@@ -1,6 +1,23 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV024",
+                         "tarih":  "2026-10-21",
+                         "baslik":  "Yeni kaldırımlar, düzelen köşeler ve daha az titreme",
+                         "maddeler":  [
+                                          "Yollar ve kaldırımlar haritanın kendi düzenine döndü (V023\u0027te yeniden kurulan kaldırımlar kalktı): kaldırımlar koyu gri kare taş plak, bordürler gri, yollar asfalt; zebra ve şerit çizgileri yerinde",
+                                          "Beyaz kalan yerler de kaplandı: eski kaldırım yüzeyleri, yaya yolları, bina önlerindeki dolgu ve dükkân eşikleri aynı plakla ve gri; demiryolu yatakları gri beton; geniş zeminlerdeki koyu lekeler azaldı",
+                                          "Bazı binalarda uzaktan yanıp sönen dokular azaldı: üst üste binen yüzeyler ayrıldı, uzaktaki balkon korkulukları daha sade çiziliyor. Kalan titremeler bir sonraki güncellemede",
+                                          "Sarıyer Börekçisi\u0027nin karşısında hastane parmaklığının önü tek parça: kaldırım, bordür ve parmaklığa kadar çim",
+                                          "Dükkân kapılarındaki basamaklar zemine oturdu, kapı önlerinde yığılan taş bloklar kalktı; Bay Optik, Adnan Kahveci ve Kısmet\u0027in giriş merdivenleri geri geldi",
+                                          "Tuna kavşağına taşan adacık kalktı, kaldırımın kenarı tek düzgün eğri; kıvrılan bir duvar artık düz",
+                                          "F2 ile bildirilen yerler: düşülen çukur kapandı, yolda çarpılan görünmez duvarlar kalktı, otoyol kenarındaki üçgen boşluk beton duvarla kapandı, Spor Kompleksi\u0027nin kuzeyindeki beyaz alan plak oldu, bina dibindeki bir çentik ve kaldırımdaki bej lekeler gitti",
+                                          "İki köşede (Bahar Sokağı ve Uygur) eski hazır binaların yerine sokağın kendi binaları geldi",
+                                          "Okullar: Nail Reşit İlkokulu\u0027nun Kaplan Sokağı kapısından içeri basamaklarla girilebiliyor, Nail Reşit ve Ahmet Haşim\u0027in bahçeleri yenilendi; Kız Meslek Lisesi\u0027nin kapı önü düzeldi",
+                                          "Oyundan çıkarken bazen olan çökme düzeldi"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV023",
                          "tarih":  "2026-10-16",
                          "baslik":  "Akıcı sürüş, DLSS / FSR ve temizlenen sokaklar",
