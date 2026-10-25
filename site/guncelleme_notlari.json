@@ -1,6 +1,27 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV025",
+                         "tarih":  "2026-10-25",
+                         "baslik":  "Boya Kapışması, kaykay parkı, Kurusıkı ve masa oyunları",
+                         "maddeler":  [
+                                          "Yeni mini oyun Boya Kapışması: 4\u0027e 4 takımlar alanı kendi rengine boyuyor; 8 silah (Fıskiye, Rulo, Fırça, İkiz, Kova, Döner ...), kalamar olup boyada yüzme, bomba ve özel güç; girişte lobi açılıyor: karakter, silah ve harita seçimi, boş yerlere bot; maç bitince lobiye dönüp tekrar oynayabilir ya da şehre dönebilirsin. Giriş stadyum otoparkının köşesinde",
+                                          "Kaykay: araç menüsünden (B) kaykaya binip şehirde gezebilirsin; stadyum otoparkının tamamı kaykay parkı: rampalar, quarter\u0027lar, half-pipe, havuz, raylar, ledge\u0027ler, merdivenler, beton bariyerler, dalga (pump) hattı, piknik masaları, gece lambaları. Ollie, flip, grab, manual ve grind",
+                                          "Yeşilçam masasında yeni oyun Kurusıkı: iki kişilik, dolu ve boş fişeklerle şans ve blöf oyunu; gerçek kırma tüfek (kesik namlu dahil), fişekler ve eşyalar, dolu atışta namlu dumanı",
+                                          "Universe Academy\u0027de fitness: dambıl (curl, omuz press, lateral raise), bench press, koşu bandı, lat pulldown ve squat; alete E ile otur, ağırlığı ve hareketi seç, Q ile kalk; antrenmanların kaydediliyor",
+                                          "Oyun sırasında yanlışlıkla H\u0027ye basınca artık hemen şehre atmıyor: \"Şehre dönmek istediğine emin misin?\" penceresi açılıyor, 3 saniye sonra H ya da Evet ile şehre dönülüyor, Esc ya da Hayır ile oyuna devam; lobide H yine anında döndürüyor",
+                                          "Arabalı Futbol, Sokak Kart ve Boya Kapışması girişleri stadyum otoparkının araba girişinin önündeki köşede toplandı",
+                                          "Yeşilçam\u0027daki Okey masalarına oturunca \"Ne oynayalım?\" menüsü açılıyor: 101 Okey\u0027in yanında Tavla, Pişti, Batak ve Satranç; ayağa kalkmadan oyun değiştirilebiliyor, boş yerlere bot oturuyor",
+                                          "Satranç: Ahşap ya da Mermer tahta (kurulumda seçilir), gerçekçi taşlar (koyu taşlar artık parlamıyor), bota karşı oynarken Stockfish satranç motoru",
+                                          "Pişti ve Batak: gerçek iskambil kartları (A K Q J, Türkçe köşe harfi), 2\u0027li / 4\u0027lü eşli Pişti, kolay ve orta zorlukta botlar",
+                                          "Okey: taş sesleri; botlar okeyi saklıyor, okeyle bitirmeyi bekliyor",
+                                          "Atışalanı Caddesi\u0027nde Universe Academy spor salonu binası: dış cephe, iki giriş ve iç salon; girişteki kafa karıştıran kolon kalktı",
+                                          "Haritanın altına düşersen oyun seni son sağlam zemine geri getiriyor (yürürken, arabada); stadyum otoparkının kenarındaki düşme yarığı kapandı",
+                                          "Dükkân ve bina duvarlarındaki titreme azaldı: DLSS açıkken duvar dokuları daha sakin, Demirkapı\u0027daki dükkân cephelerinde üst üste binen yüzeyler ayrıldı, içecek dolapları titremiyor",
+                                          "Açılışta nadiren olabilen bir çökme düzeldi (bazı park zeminleri hazırlanırken)"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV024",
                          "tarih":  "2026-10-21",
                          "baslik":  "Yeni kaldırımlar, düzelen köşeler ve daha az titreme",

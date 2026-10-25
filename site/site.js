@@ -24,7 +24,17 @@
       if (r.published_at) bas.appendChild(el("span", "surum-tarih", tarih(r.published_at)));
       if (i === 0) bas.appendChild(el("span", "surum-son", "SON SÜRÜM"));
       k.appendChild(bas);
-      k.appendChild(el("p", null, (r.body || "").trim() || "Not yok."));   // (textContent: HTML yorumlanmaz)
+      // açıklama düz yazı: "**başlık**" satırı başlık, "- " satırları madde, kalanı paragraf (textContent: HTML yorumlanmaz)
+      var ul = null, satirlar = (r.body || "").replace(/\r/g, "").split("\n");
+      satirlar.forEach(function (s) {
+        s = s.trim(); if (!s) return;
+        var m = /^[-*•]\s+(.*)$/.exec(s);
+        if (m) { if (!ul) { ul = el("ul", "surum-maddeler"); k.appendChild(ul); } ul.appendChild(el("li", null, m[1].replace(/\*\*/g, ""))); return; }
+        ul = null;
+        var b = /^\*\*(.+)\*\*$/.exec(s);
+        k.appendChild(b ? el("h3", "surum-baslik", b[1]) : el("p", null, s.replace(/\*\*/g, "")));
+      });
+      if (!k.querySelector("p, ul")) k.appendChild(el("p", null, "Not yok."));
       kap.appendChild(k);
     });
     var kaynak = document.getElementById("surum-kaynak");
