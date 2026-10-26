@@ -1,6 +1,24 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV026",
+                         "tarih":  "2026-10-26",
+                         "baslik":  "Poker, yeni krupiye, Boya Kapışması açılışı ve yeni haritalar",
+                         "maddeler":  [
+                                          "Yeşilçam masasında yeni oyun Poker (Texas Hold\u0027em): \"Ne oynayalım?\" menüsünden seç; arkadaşlarla ve botlarla, fiş, artır / gör / pas, el sonunda el adları",
+                                          "Kurusıkı\u0027da yeni krupiye: porselen yüzlü, kasketli, ceketli; vurdukça yüzünde çatlaklar büyüyor, bayılıyor. Maç ve tur sonu yazıları artık kendiliğinden sönüyor",
+                                          "Tavla cilası: pulu seçince her zar için ayrı ayrı nereye gidebileceğin ve iki zarın toplamı tahtada gösteriliyor; hedefler tam isabetle seçiliyor, sürükleyip bırakmak da çalışıyor",
+                                          "Boya Kapışması maç açılışı: kamera haritanın içinde güzel bir tur atıp kendi oyuncunun arkasına iniyor, ekranda kocaman HAZIR? ve BAŞLA! yazısı",
+                                          "Boya Kapışması\u0027na 3 yeni harita (Marina, Meydan, Liman) ve yepyeni Pazar Bayrampaşa: apartmanlar, Türkçe tabelalar, kapalı pazar, tezgâhlar, brandalar ve bayraklar",
+                                          "Boya Kapışması: yeni maç içi ekran, vurulunca ekran kenarında hasar izi, lobide ısınma, daha iyi boya efektleri ve doğuşta süper zıplama; ilk maçın başındaki takılma giderildi",
+                                          "Ayarlar\u0027da FPS göstergesi; seçtiğin ayarlar artık kalıcı",
+                                          "Kaykay: araba çarpınca hıza göre savrulma ya da sendeleme; odadaki arkadaşların kaykaycısı gerçek karakteriyle görünüyor; kaykay parkındaki görünmez duvarlar kalktı",
+                                          "Universe Academy fitness: arkadaşların idmanı (bench, squat, koşu bandı) senin ekranında da doğru görünüyor, eller barda",
+                                          "Şehir: yolcuyken bakış ve kokpit görüntüsü, iç mekândayken trafik kilidi ve korna düzeltmeleri; odada herkesin saati ev sahibininkiyle aynı; yayalar kaybolmuyor",
+                                          "V025 oyununda bildirdiğiniz hatalar düzeltildi: Kurusıkı\u0027da istemcide krupiye ve izleyici karanlığı, satrançta rok ve siyah taşlar, geri alma teklifi, Yeşilçam\u0027da uzaktaki karakter"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV025",
                          "tarih":  "2026-10-25",
                          "baslik":  "Boya Kapışması, kaykay parkı, Kurusıkı ve masa oyunları",
