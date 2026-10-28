@@ -1,6 +1,26 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV027",
+                         "tarih":  "2026-10-28",
+                         "baslik":  "Bowling, Bilardo, Kule Yarışı, Mutfak Telaşı, Basket; denemede Bomba Meydanı ve Şamata Kart; her oyunun kendi lobisi",
+                         "maddeler":  [
+                                          "Oyunun yeni adı Şamata: Bayrampasha. Başlatıcı kendini günceller: masaüstündeki kısayolun adı ve simgesi Şamata Bayrampasha olur, her zamanki gibi ondan aç. Oyun yeniden inmez; ayarların, kayıtların ve kurulu klasör yerinde kalır",
+                                          "Yeni mini oyun Bowling: Universe Academy\u0027nin bowling kapısından kendi salonuna gir; 4 kulvar, 1–6 kişi, 11 / 14 / 16 lb top, falso, strike / spare sayımı ve tepede skor ekranı. Lobisi kulvar başında: topunu ve rengini seç, hazır olan topuyla sıraya girer",
+                                          "Yeni mini oyun Bilardo: Universe Academy\u0027nin oyun köşesinde 1\u0027e 1 (8 top); ıstakayla nişan, güç ve falso, gerçekçi top / bant / cep fiziği, oyuncu masaya eğilip vuruyor, uzak toplarda köprü sopası kullanıyor. Lobisi lambanın altında: ıstakanı raftan seç, hazır olunca ucunu tebeşirle",
+                                          "Yeni mini oyun Kule Yarışı: İsmetpaşa\u0027daki inşaat arsasından gir; düşen parçaları dizerek kuleyi ilk bitiş çizgisine çıkaran kazanır. Yarış, Hayatta Kal ve En Yüksek kipleri; gündüz gökyüzü altında, iskeleli ve fileli bir şantiyede. Lobisi şantiyede",
+                                          "Yeni mini oyun Mutfak Telaşı: stadyum otoparkının köşesindeki seyyar arabadan gir; tost, lahmacun, dürüm ve çay siparişlerini arkadaşlarınla yetiştir. 3–4 aşçıda mutfak büyüyor, ikinci fırın / tost / döner / teslim açılıyor; gerçek mutfak sesleri. Lobisi mutfağın içinde",
+                                          "Basket: Universe Academy salonunda 3 sayı yarışması (raflar, para topları, süre). Lobisi saha kenarında",
+                                          "Denemede, Bomba Meydanı (henüz bitmedi, test ediyoruz; hata görürsen F2 ile bildir): stadyum otoparkındaki bomba sandıklarından gir; 2–8 kişi, Death Match ya da Elimination, yumrukla, tut fırlat, bombanı at, kenardan düşen ölür. Lobisi iskele başında: hazır olanın elinde fitili yanan bomba",
+                                          "Denemede, Şamata Kart (henüz bitmedi, test ediyoruz; hata görürsen F2 ile bildir): stadyum otoparkındaki pit kulübesinden gir; drift turbo, nitro, eşyalar ve botlarla yarış. Lobisi pit alanında: kartını ve sürüşünü seç (A Klasik, B Ağır / gerçekçi, C Hızlı / atari)",
+                                          "Her mini oyunun kendi lobisi var: girince oyun hemen başlamıyor. R hazır, Enter başlat, B bot ekle, Shift+B bot çıkar (ya da lobideki + BOT / − BOT düğmeleri, botun yanındaki ×), ESC şehre dön; maç bitince Rövanş ile aynı ayarlarla lobiye dönersin",
+                                          "Sokak Kart\u0027ın yeni adı Şehirde Yarış (Şamata Kart ile karışmasın diye); kendi lobisi şehirde, güzergâhın start çizgisinde (gündüz): arabanın rengini ve plakasını seç, güzergâhı ve tur sayısını belirle. Lobi açıkken start çizgisinden trafik geçmez",
+                                          "Mini oyun girişleri yenilendi: Arabalı Futbol\u0027da bilet gişesi, Şehirde Yarış\u0027ta start kapısı, Boya Kapışması\u0027nda boya büfesi, Universe Academy kapısında giriş totemi; yaklaşınca kaç kişinin beklediği yazıyor",
+                                          "Ekranlar yeni Şamata görünüşünde: masa oyunları, mini harita, F2 hata bildirimi ve mini oyunların çoğu",
+                                          "Arabalı Futbol: sahanın çimi yenilendi; süper hız halkası araba boyunda, boost ışığı yere vurmuyor"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV026",
                          "tarih":  "2026-10-26",
                          "baslik":  "Poker, yeni krupiye, Boya Kapışması açılışı ve yeni haritalar",

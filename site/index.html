@@ -3,22 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bayrampaşa — arkadaşlarla açık dünya (test sürümü)</title>
-<meta name="description" content="Bayrampaşa'da geçen açık dünya: Boya Kapışması, kaykay parkı, Yeşilçam'da tavla, satranç ve okey, arabalı futbol, yaşayan şehir ve VPN'siz internet odaları. Ücretsiz test sürümü.">
+<title>Şamata: Bayrampasha — arkadaşlarla açık dünya (test sürümü)</title>
+<meta name="description" content="Şamata: Bayrampasha — Bayrampasha'da geçen açık dünya: Bowling, Bilardo, Kule Yarışı, Mutfak Telaşı, Basket, Boya Kapışması, Arabalı Futbol, Yeşilçam masaları, kaykay parkı ve VPN'siz internet odaları. Ücretsiz test sürümü.">
 <meta name="theme-color" content="#0b0814">
-<meta property="og:title" content="Bayrampaşa — test sürümü">
-<meta property="og:description" content="Boya Kapışması, kaykay parkı, Yeşilçam masaları, arabalı futbol. Arkadaşlarla internet odaları, VPN gerekmez.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:title" content="Şamata: Bayrampasha — test sürümü">
+<meta property="og:description" content="Bowling, Bilardo, Kule Yarışı, Mutfak Telaşı, Basket ve bir sürü mini oyun daha. Arkadaşlarla internet odaları, VPN gerekmez.">
+<meta property="og:image" content="https://bpasa.edizegemercan.com.tr/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Şamata: Bayrampasha">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:type" content="website">
-<link rel="icon" href="img/simge.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="img/simge-64.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="img/simge-180.png">
 <link rel="preload" href="font/titan.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
 <header class="ust">
-  <a class="logo" href="#ana">BAYRAMPAŞA</a>
+  <a class="logo" href="#ana" aria-label="Şamata: Bayrampasha — başa dön"><span class="marka-kucuk"><img src="img/simge-64.png" alt="" width="30" height="30"><span class="marka-kucuk-ad" aria-hidden="true">ŞAMATA</span><span class="marka-kucuk-kurdele" aria-hidden="true">BAYRAMPASHA</span></span></a>
   <nav class="menu" aria-label="Bölümler">
+    <a href="#oyunlar">Oyunlar</a>
     <a href="#yeni">Yeni</a>
     <a href="#oyun">Oyun</a>
     <a href="#galeri">Galeri</a>
@@ -34,105 +41,218 @@
 <main>
 <!-- ============================================================ ANA SAYFA -->
 <section id="ana" class="kahraman">
-  <img class="kahraman-gorsel" src="img/hero.jpg" alt="Akşam üstü Bayrampaşa: güneş batarken apartmanlar, cami ve trafiği akan cadde" fetchpriority="high">
+  <img class="kahraman-gorsel" src="img/hero.webp" alt="Akşam üstü Bayrampasha yukarıdan: güneş batarken apartmanlar, uzakta cami, trafiği akan cadde" fetchpriority="high">
   <div class="kahraman-ic">
     <span class="rozet-test">TEST SÜRÜMÜ</span>
-    <h1>BAYRAMPAŞA</h1>
-    <p class="slogan">Mahallede kaykay çek, boya kapışmasına gir, Yeşilçam'da tavla at, arabayla top oyna.
+    <h1 class="marka"><span class="gorunmez">Şamata: Bayrampasha</span><span class="marka-kelime" aria-hidden="true"><span>Ş</span><span>A</span><span>M</span><span>A</span><span>T</span><span>A</span></span><span class="marka-kurdele" aria-hidden="true">BAYRAMPASHA</span></h1>
+    <p class="slogan">Salonda bowling at, mutfakta sipariş yetiştir, Yeşilçam'da tavla oyna, arabayla top kovala.
       Arkadaşlarınla aynı şehirde, VPN'siz.</p>
     <div class="kahraman-eylem">
       <a class="indir-dugme" id="indir" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
         <span class="indir-ust">İNDİR</span>
-        <span class="indir-alt"><span data-surum>OnlineV025</span> · Windows · başlatıcı <span data-exe-boyut>0,4 MB</span></span>
+        <span class="indir-alt"><span data-surum>OnlineV027</span> · Windows · başlatıcı <span data-exe-boyut>2,0 MB</span></span>
       </a>
-      <a class="ikincil-dugme" href="#yeni">V025'te ne var?</a>
+      <a class="ikincil-dugme" href="#oyunlar">Bütün oyunlar</a>
+      <a class="ikincil-dugme" href="#yeni">V027'de ne var?</a>
     </div>
     <p class="kahraman-not">İlk açılışta oyun iner; sonraki güncellemeler küçük ve kendiliğinden.
       Windows uyarı verirse: <b>Ek bilgi → Yine de çalıştır</b>. Hata görürsen oyunda <kbd>F2</kbd>.</p>
   </div>
 </section>
 
-<!-- ============================================================ YENİ (V025) -->
+<!-- ============================================================ BÜTÜN OYUNLAR -->
+<section id="oyunlar" class="bolum oyunlar">
+  <div class="oyunlar-bas">
+    <div>
+      <p class="ust-etiket">Oyunlar</p>
+      <h2>Bütün oyunlar</h2>
+    </div>
+    <p class="ince">19 oyun, hepsi şehrin içinde; boş yerlere bot girer. Yenilere dokun, ayrıntısı aşağıda.</p>
+  </div>
+  <h3 class="grup-ad">Mini oyunlar</h3>
+  <ul class="dosemeler dosemeler-mini">
+      <li><a class="doseme d-bowling" href="#yeni-bowling"><span class="doseme-gorsel"><img src="img/o-bowling.webp" alt="Bowling: labutlar devrildi, ekranda STRIKE!" loading="lazy" width="800" height="450"><span class="isaret yeni">YENİ</span></span><span class="doseme-ad">Bowling</span><span class="doseme-tan">4 kulvar, falso, strike ve spare, tepede skor ekranı.</span><span class="doseme-bilgi"><span>1–6 kişi</span><span>Universe Academy</span></span></a></li>
+      <li><a class="doseme d-bilardo" href="#yeni-bilardo"><span class="doseme-gorsel"><img src="img/o-bilardo.webp" alt="Bilardo üstten: top cebe giriyor, ekranda CEBE!" loading="lazy" width="800" height="450"><span class="isaret yeni">YENİ</span></span><span class="doseme-ad">Bilardo</span><span class="doseme-tan">8 top; ıstakayla nişan, güç ve falso.</span><span class="doseme-bilgi"><span>1'e 1</span><span>Universe Academy</span></span></a></li>
+      <li><a class="doseme d-kule" href="#yeni-kule"><span class="doseme-gorsel"><img src="img/o-kule.webp" alt="Kule Yarışı: şantiyede dört oyuncunun kuleleri" loading="lazy" width="800" height="450"><span class="isaret yeni">YENİ</span></span><span class="doseme-ad">Kule Yarışı</span><span class="doseme-tan">Düşen parçaları diz, kuleni çizgiye ilk sen çıkar.</span><span class="doseme-bilgi"><span>1–4 kişi</span><span>İsmetpaşa, inşaat arsası</span></span></a></li>
+      <li><a class="doseme d-mutfak" href="#yeni-mutfak"><span class="doseme-gorsel"><img src="img/o-mutfak.webp" alt="Mutfak Telaşı: yukarıdan mutfak, aşçılar tezgâhlar arasında" loading="lazy" width="800" height="450"><span class="isaret yeni">YENİ</span></span><span class="doseme-ad">Mutfak Telaşı</span><span class="doseme-tan">Tost, lahmacun, dürüm, çay: siparişleri yetiştir.</span><span class="doseme-bilgi"><span>1–4 aşçı</span><span>Otopark, seyyar araba</span></span></a></li>
+      <li><a class="doseme d-basket" href="#yeni-basket"><span class="doseme-gorsel"><img src="img/o-basket.webp" alt="Basket 3 sayı yarışması: salonda şut" loading="lazy" width="800" height="450"><span class="isaret yeni">YENİ</span></span><span class="doseme-ad">Basket: 3 sayı</span><span class="doseme-tan">Süre bitmeden raflardaki topları at.</span><span class="doseme-bilgi"><span>1–4 kişi</span><span>Universe Academy</span></span></a></li>
+      <li><a class="doseme d-boya" href="img/b-boya.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-boya.webp" alt="Boya Kapışması: Bayrampaşa Pazarı haritasında maç, yer sarıya boyanmış" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Boya Kapışması</span><span class="doseme-tan">İki takım, alanı kendi rengine boya; kalamar olup yüz.</span><span class="doseme-bilgi"><span>4'e 4</span><span>Otopark, boya büfesi</span></span></a></li>
+      <li><a class="doseme d-futbol" href="img/b-futbol.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-futbol.webp" alt="Arabalı Futbol: dev top kaleye doğru, arkada tribünler" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Arabalı Futbol</span><span class="doseme-tan">Takviye, zıplama, havada takla; arabayla gol at.</span><span class="doseme-bilgi"><span>2–8 kişi</span><span>Otopark, bilet gişesi</span></span></a></li>
+      <li><a class="doseme d-yaris" href="#yeni-yaris"><span class="doseme-gorsel"><img src="img/o-yaris.webp" alt="Şehirde Yarış: kırmızı araba şehirde yarışta" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Şehirde Yarış</span><span class="doseme-tan">Şehrin sokaklarında güzergâh yarışı; renk ve plaka senin.</span><span class="doseme-bilgi"><span>1–8 kişi</span><span>Otopark, start kapısı</span></span></a></li>
+      <li><a class="doseme d-bomba" href="#yeni-bomba"><span class="doseme-gorsel"><img src="img/o-bomba.webp" alt="Bomba Meydanı: iskeledeki arenada oyuncular ve sandıklar" loading="lazy" width="800" height="450"><span class="isaret deneme">DENEME</span></span><span class="doseme-ad">Bomba Meydanı</span><span class="doseme-tan">Yumrukla, fırlat, bombanı at; kenardan düşen elenir.</span><span class="doseme-bilgi"><span>2–8 kişi</span><span>Otopark, bomba sandıkları</span></span></a></li>
+      <li><a class="doseme d-samata" href="#yeni-kart"><span class="doseme-gorsel"><img src="img/o-kart.webp" alt="Şamata Kart: kart deniz kenarındaki pistte" loading="lazy" width="800" height="450"><span class="isaret deneme">DENEME</span></span><span class="doseme-ad">Şamata Kart</span><span class="doseme-tan">Drift turbo, nitro ve eşyalarla kart yarışı.</span><span class="doseme-bilgi"><span>1–8 kart</span><span>Otopark, pit kulübesi</span></span></a></li>
+  </ul>
+  <div class="oyunlar-alt">
+    <div class="grup grup-masa">
+      <h3 class="grup-ad">Yeşilçam masaları <span>Yeşilçam kafe</span></h3>
+      <ul class="dosemeler dosemeler-masa">
+        <li><a class="doseme d-menu" href="img/masa.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-menu.webp" alt="Yeşilçam masası: Ne oynayalım? menüsü, yedi oyun" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Ne oynayalım?</span><span class="doseme-tan">Okey masasına otur, oyunu seç; boş sandalyeye bot.</span><span class="doseme-bilgi"><span>Yeşilçam kafe</span></span></a></li>
+        <li><a class="doseme d-okey" href="img/b-okey.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-okey.webp" alt="101 Okey: ıstakada taşlar, masanın ortasında deste" loading="lazy" width="800" height="450"></span><span class="doseme-ad">101 Okey</span><span class="doseme-tan">Taş çek, per aç, 101'i geç.</span><span class="doseme-bilgi"><span>4 kişi</span></span></a></li>
+        <li><a class="doseme d-tavla" href="img/b-tavla.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-tavla.webp" alt="Tavla: ahşap tahtada pullar ve zarlar" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Tavla</span><span class="doseme-tan">Zar at, pulları topla.</span><span class="doseme-bilgi"><span>2 kişi</span></span></a></li>
+        <li><a class="doseme d-pisti" href="img/b-pisti.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-pisti.webp" alt="Pişti: yeşil çuhada kartlar" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Pişti</span><span class="doseme-tan">Aynı kartla yerdekini al.</span><span class="doseme-bilgi"><span>2 / 4 kişi</span></span></a></li>
+        <li><a class="doseme d-batak" href="img/b-batak.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-batak.webp" alt="Batak: elde kartlar, ortada el" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Batak</span><span class="doseme-tan">İhaleyi al, sözünü tut.</span><span class="doseme-bilgi"><span>4 kişi</span></span></a></li>
+        <li><a class="doseme d-satranc" href="img/b-satranc.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-satranc.webp" alt="Satranç: ŞAH MAT, tahtada son konum" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Satranç</span><span class="doseme-tan">Bota karşı Stockfish.</span><span class="doseme-bilgi"><span>2 kişi</span></span></a></li>
+        <li><a class="doseme d-poker" href="img/g-poker.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-poker.webp" alt="Poker: masada botlar, fişler ve ortadaki kartlar" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Poker</span><span class="doseme-tan">Texas Hold'em, fişleri topla.</span><span class="doseme-bilgi"><span>2–4 kişi</span></span></a></li>
+        <li><a class="doseme d-kurusiki" href="img/b-kurusiki.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-kurusiki.webp" alt="Kurusıkı: masada tüfek, karşıda krupiye" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Kurusıkı</span><span class="doseme-tan">Tüfek dolu mu, boş mu?</span><span class="doseme-bilgi"><span>2–4 kişi</span></span></a></li>
+      </ul>
+    </div>
+    <div class="grup grup-sehir">
+      <h3 class="grup-ad">Şehirde</h3>
+      <ul class="dosemeler dosemeler-sehir">
+        <li><a class="doseme d-fitness" href="img/b-fitness.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-fitness.webp" alt="Universe Academy'de bench press" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Fitness</span><span class="doseme-tan">Bench press, dambıl, koşu bandı.</span><span class="doseme-bilgi"><span>tek kişi</span><span>Universe Academy</span></span></a></li>
+        <li><a class="doseme d-kaykay" href="img/b-kaykay.webp" data-buyut><span class="doseme-gorsel"><img src="img/o-kaykay.webp" alt="Kaykay parkında havada bir atlayış" loading="lazy" width="800" height="450"></span><span class="doseme-ad">Kaykay</span><span class="doseme-tan">Araç menüsünden (B) bin: ollie, grind, half-pipe.</span><span class="doseme-bilgi"><span>gezme</span><span>Otopark</span></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ YENİ (V027) -->
 <section id="yeni" class="bolum">
-  <p class="ust-etiket">Yeni · V025</p>
+  <p class="ust-etiket">Yeni · V027</p>
   <h2>Bu güncellemede</h2>
+  <p class="giris">Beş yeni mini oyun, denemede iki oyun daha ve her oyunun kendi lobisi. Oyunun adı da artık <b>Şamata: Bayrampasha</b>:
+    başlatıcı kendini günceller, kısayolun adı ve simgesi kendiliğinden değişir, oyun yeniden inmez.</p>
 
-  <article class="one-cikan boya">
-    <figure class="one-gorsel"><img src="img/boya.jpg" alt="Boya Kapışması lobisi: pembe ve nane takımlar boya silahlarıyla sahnede, arkada neon tabela" loading="lazy"></figure>
+  <div class="yeni-oyunlar">
+    <article class="oyun-kart bowling" id="yeni-bowling">
+      <figure class="oyun-gorsel"><img src="img/bowling.webp" alt="Bowling: oyuncu kulvarda topu bırakıyor, ileride labutlar ve Universe Academy'nin neon salonu, üstte skor tablosu" loading="lazy" width="1920" height="1080"></figure>
+      <div class="oyun-yazi">
+        <h3>Bowling</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>1–6 kişi</li><li>Universe Academy</li></ul>
+        <p>Universe Academy'nin bowling kapısından kendi salonuna gir: 4 kulvar, 11 / 14 / 16 lb top, falso, strike ve spare sayımı,
+          tepede skor ekranı.</p>
+      </div>
+    </article>
+    <article class="oyun-kart bilardo" id="yeni-bilardo">
+      <figure class="oyun-gorsel"><img src="img/bilardo.webp" alt="Bilardo: istaka beyaz topun arkasında, nişan çizgisi ve güç göstergesi, alt tarafta sıra sende yazısı" loading="lazy" width="1920" height="1080"></figure>
+      <div class="oyun-yazi">
+        <h3>Bilardo</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>1'e 1</li><li>Universe Academy</li></ul>
+        <p>Akademinin oyun köşesinde 8 top. Istakayla nişan al, gücü ve falsoyu ayarla; top, bant ve cepler gerçekçi fizikle.</p>
+      </div>
+    </article>
+    <article class="oyun-kart kule" id="yeni-kule">
+      <figure class="oyun-gorsel"><img src="img/kule.webp" alt="Kule Yarışı: şantiyede vinç altında dört oyuncunun kuleleri, solda bitiş çizgisine kalan metre, ortada sıradaki parça" loading="lazy" width="1920" height="1080"></figure>
+      <div class="oyun-yazi">
+        <h3>Kule Yarışı</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>1–4 kişi</li><li>İsmetpaşa, inşaat arsası</li></ul>
+        <p>Düşen parçaları dizip kuleni bitiş çizgisine ilk sen çıkar. Yarış, Hayatta Kal ve En Yüksek kipleri.</p>
+      </div>
+    </article>
+    <article class="oyun-kart mutfak" id="yeni-mutfak">
+      <figure class="oyun-gorsel"><img src="img/mutfak.webp" alt="Mutfak Telaşı: yukarıdan dama karolu mutfak, aşçılar fırın, tost makinesi ve tezgâh arasında koşuyor, üstte siparişler" loading="lazy" width="1920" height="1080"></figure>
+      <div class="oyun-yazi">
+        <h3>Mutfak Telaşı</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>1–4 aşçı</li><li>Otoparktaki seyyar araba</li></ul>
+        <p>Tost, lahmacun, dürüm ve çay siparişlerini arkadaşlarınla yetiştir. Üç dört aşçı olunca mutfak büyür: ikinci fırın, tost ve döner açılır.</p>
+      </div>
+    </article>
+    <article class="oyun-kart basket" id="yeni-basket">
+      <figure class="oyun-gorsel"><img src="img/basket.webp" alt="Basket 3 sayı yarışması: salonda oyuncu çizginin gerisinden şut atıyor, top havada, yanında top rafı" loading="lazy" width="1920" height="1080"></figure>
+      <div class="oyun-yazi">
+        <h3>Basket: 3 sayı</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>1–4 kişi</li><li>Universe Academy</li></ul>
+        <p>Salonda 3 sayı yarışması: raflardaki topları süre bitmeden at. Para topları iki sayı.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="deneme-bas">
+    <h3>Denemede</h3>
+    <p class="ince">Henüz bitmedi, birlikte test ediyoruz. Bir hata görürsen oyunda <kbd>F2</kbd>.</p>
+  </div>
+  <div class="deneme-oyunlar">
+    <article class="oyun-kart bomba deneme" id="yeni-bomba">
+      <figure class="oyun-gorsel"><img src="img/bomba.webp" alt="Bomba Meydanı: iskelenin üstündeki arenada patlama, oyuncular sandıkların arasında, kenarda pazar tenteleri" loading="lazy" width="1920" height="1080"><span class="rozet-deneme">DENEME</span></figure>
+      <div class="oyun-yazi">
+        <h3>Bomba Meydanı</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>2–8 kişi</li><li>Otoparktaki bomba sandıkları</li></ul>
+        <p>Yumrukla, tut fırlat, bombanı at; kenardan düşen elenir. Death Match ya da Elimination.</p>
+      </div>
+    </article>
+    <article class="oyun-kart samata deneme" id="yeni-kart">
+      <figure class="oyun-gorsel"><img src="img/samata-kart.webp" alt="Şamata Kart: kart taş döşeli pistte turuncu turboyla ilerliyor, solda sıralama, sağda hız göstergesi" loading="lazy" width="1920" height="1080"><span class="rozet-deneme">DENEME</span></figure>
+      <div class="oyun-yazi">
+        <h3>Şamata Kart</h3>
+        <ul class="oyun-bilgi" aria-label="Kişi ve giriş"><li>1–8 kart</li><li>Otoparktaki pit kulübesi</li></ul>
+        <p>Drift turbo, nitro ve eşyalarla kart yarışı, boş yerlerde botlar. Üç sürüş: Klasik, Ağır / gerçekçi, Hızlı / atari.</p>
+      </div>
+    </article>
+  </div>
+
+  <article class="one-cikan yaris" id="yeni-yaris">
+    <figure class="one-gorsel"><img src="img/sehirde-yaris.webp" alt="Şehirde Yarış lobisi: gündüz şehirde start çizgisinde arabalar; solda grid, sağda güzergâh haritası, tur sayısı" loading="lazy" width="1920" height="1080"></figure>
     <div class="one-yazi">
-      <p class="takimlar"><span class="takim pembe">PEMBE</span><span class="vs">vs</span><span class="takim nane">NANE</span></p>
-      <h3>Boya Kapışması</h3>
-      <p>4'e 4 iki takım, alanı kendi rengine boyuyor. Fıskiye, Rulo, Fırça, İkiz, Kova, Döner… sekiz silah; kalamar olup kendi
-        boyanda yüz, bomba at, özel gücünü doldur. Girişte lobi açılır: karakterini, silahını ve haritayı seç, boş yerlere bot girer.</p>
-      <p class="ince">Giriş: stadyum otoparkının köşesi.</p>
+      <p class="ust-not">Sokak Kart'ın yeni adı</p>
+      <h3>Şehirde Yarış</h3>
+      <p>Lobi şehirde, güzergâhın start çizgisinde: arabanın rengini ve plakasını seç, güzergâhı ve tur sayısını belirle.
+        Lobi açıkken start çizgisinden trafik geçmez.</p>
+      <p class="ince">Giriş: stadyum otoparkındaki start kapısı.</p>
     </div>
   </article>
 
-  <article class="one-cikan kaykay ters">
-    <figure class="one-gorsel"><img src="img/kaykay.jpg" alt="Gece kaykay parkında rampadan havalanıp grab yapan kaykaycı; arkada mini oyun tabelaları" loading="lazy"></figure>
-    <div class="one-yazi">
-      <h3>Kaykay parkı</h3>
-      <p>Araç menüsünden (<kbd>B</kbd>) kaykaya bin, şehirde gez. Stadyum otoparkının tamamı park: rampalar, quarter'lar, half-pipe,
-        havuz, raylar, ledge'ler, merdivenler ve gece lambaları. Ollie, flip, grab, manual, grind.</p>
+  <div class="lobiler">
+    <div class="lobi-yazi">
+      <h3>Her oyunun kendi lobisi</h3>
+      <p>Girince oyun hemen başlamıyor: <kbd>R</kbd> hazır, <kbd>Enter</kbd> başlat, <kbd>B</kbd> bot ekle, <kbd>Shift</kbd>+<kbd>B</kbd> bot çıkar,
+        <kbd>ESC</kbd> şehre dön. Maç bitince <b>Rövanş</b> ile aynı ayarlarla lobiye dönersin.</p>
     </div>
-  </article>
+    <ul class="lobi-serit" aria-label="Lobilerden kareler">
+      <li><figure><img src="img/lobi-bowling.webp" alt="Bowling lobisi: kulvar başında oyuncular listesi, top rengi ve ağırlığı seçimi" loading="lazy" width="960" height="540"><figcaption><b>Bowling</b>kulvar başı</figcaption></figure></li>
+      <li><figure><img src="img/lobi-kule.webp" alt="Kule Yarışı lobisi: şantiyede dört oyuncu, sağda Yarış / Hayatta Kal / En Yüksek kipleri" loading="lazy" width="960" height="540"><figcaption><b>Kule Yarışı</b>şantiye</figcaption></figure></li>
+      <li><figure><img src="img/lobi-mutfak.webp" alt="Mutfak Telaşı lobisi: mutfağın içinde aşçılar sıra olmuş, solda aşçı listesi" loading="lazy" width="960" height="540"><figcaption><b>Mutfak Telaşı</b>mutfağın içi</figcaption></figure></li>
+      <li><figure><img src="img/lobi-bomba.webp" alt="Bomba Meydanı lobisi: iskele başında oyuncular, solda Death Match ve Elimination kipleri" loading="lazy" width="960" height="540"><figcaption><b>Bomba Meydanı</b>iskele başı</figcaption></figure></li>
+      <li><figure><img src="img/lobi-kart.webp" alt="Şamata Kart lobisi: pit alanında kartlar ve sürücüler, sürücü listesi ve sürüş seçimi" loading="lazy" width="960" height="540"><figcaption><b>Şamata Kart</b>pit alanı</figcaption></figure></li>
+      <li><figure><img src="img/lobi-basket.webp" alt="Basket lobisi: saha kenarında elinde topla dört oyuncu, sağda süre ve raf ayarları" loading="lazy" width="960" height="540"><figcaption><b>Basket</b>saha kenarı</figcaption></figure></li>
+    </ul>
+  </div>
 
-  <article class="one-cikan masa">
-    <figure class="one-gorsel"><img src="img/masa.jpg" alt="Yeşilçam kafede satranç: ahşap tahta, gerçek taşlar, karşıda bot rakip" loading="lazy"></figure>
-    <div class="one-yazi">
-      <h3>Yeşilçam masaları</h3>
-      <p>Okey masasına otur, “Ne oynayalım?” diye sorar: <b>101 Okey, Tavla, Pişti, Batak, Satranç</b> ve yeni
-        <b>Kurusıkı</b>. Ayağa kalkmadan oyun değiştir, boş sandalyelere bot otursun. Satrançta ahşap ya da mermer tahta, bota karşı
-        Stockfish.</p>
-      <ul class="cipler" aria-label="Masa oyunları"><li>101 Okey</li><li>Tavla</li><li>Pişti</li><li>Batak</li><li>Satranç</li><li>Kurusıkı</li></ul>
-    </div>
-  </article>
-
-  <article class="one-cikan akademi ters">
-    <figure class="one-gorsel"><img src="img/akademi.jpg" alt="Universe Academy spor salonunda bench press; arkada salonun logosu ve koşu bantları" loading="lazy"></figure>
-    <div class="one-yazi">
-      <h3>Universe Academy</h3>
-      <p>Atışalanı Caddesi'ndeki spor salonunda fitness: dambıl (curl, omuz press, lateral raise) ve bench press. Alete <kbd>E</kbd> ile
-        otur, ağırlığı ve hareketi seç, <kbd>Q</kbd> ile kalk; antrenmanların kaydediliyor.</p>
-    </div>
-  </article>
+  <ul class="ufak-yenilikler" aria-label="Diğer yenilikler">
+    <li><img src="img/girisler.webp" alt="Stadyum otoparkındaki yeni girişler: Şamata Kart'ın pit kulübesi ve kartları, start kapısı, bilet gişesi, boya büfesi" loading="lazy" width="960" height="540">
+      <h3>Yeni girişler</h3><p>Bilet gişesi, start kapısı, boya büfesi, pit kulübesi, akademinin totemi. Yaklaşınca kaç kişinin beklediği yazar.</p></li>
+    <li><img src="img/ekranlar.webp" alt="Yeni Şamata görünüşündeki Hata bildir penceresi (F2)" loading="lazy" width="960" height="540">
+      <h3>Şamata ekranları</h3><p>Masa oyunları, mini harita, <kbd>F2</kbd> hata bildirimi ve mini oyunların çoğu yeni görünüşte.</p></li>
+    <li><img src="img/futbol-cim.webp" alt="Arabalı Futbol: yeni çimli sahada mavi araba, arkada dolu tribünler" loading="lazy" width="960" height="540">
+      <h3>Arabalı Futbol</h3><p>Sahanın çimi yenilendi; süper hız halkası araba boyunda, boost ışığı yere vurmuyor.</p></li>
+  </ul>
 </section>
 
 <!-- ============================================================ OYUN HAKKINDA -->
 <section id="oyun" class="bolum koyu">
   <p class="ust-etiket">Oyun</p>
   <h2>Bir mahalle, bir sürü oyun</h2>
-  <p class="giris">Bayrampaşa sokaklarında geçen, arkadaşlarla oynanan bir açık dünya. Şehir kendi kendine yaşıyor;
+  <p class="giris">Bayrampasha sokaklarında geçen, arkadaşlarla oynanan bir açık dünya. Şehir kendi kendine yaşıyor;
     sen de istediğin köşede bir oyun başlatıyorsun. Kâr amacı gütmeyen bir arkadaş projesi, şu an test aşamasında.</p>
   <div class="kartlar">
     <article class="kart">
-      <img src="img/cadde.jpg" alt="Kavşakta taksiler ve arabalar, kaldırımda yürüyen insanlar" loading="lazy">
+      <img src="img/cadde.webp" alt="Yeşilçam kafenin bulunduğu cadde: rengârenk tente, dükkân tabelaları, yolda arabalar" loading="lazy" width="1920" height="1080">
       <h3>Yaşayan şehir</h3>
-      <p>Trafik, yürüyen insanlar, dükkânlar, polis, gece ve gündüz. Haritası gerçek Bayrampaşa'dan.</p>
+      <p>Trafik, yürüyen insanlar, dükkânlar, polis, gece ve gündüz. Çetin Emeç Stadı, okullar, hastane, camiler ve gerçek dükkân adlarıyla caddeler.
+        Haritası gerçek Bayrampaşa'dan.</p>
     </article>
     <article class="kart">
-      <img src="img/futbol.jpg" alt="Arabalı futbol stadı: dolu tribünler, skor tabelası, iki kale" loading="lazy">
+      <img src="img/mahalle.webp" alt="Stadyum otoparkı yukarıdan: kaykay parkı, mini oyun girişleri, arkada Çetin Emeç Stadı ve apartmanlar" loading="lazy" width="1920" height="1080">
+      <h3>Girişler otoparkta</h3>
+      <p>Mini oyunların çoğunun girişi stadyum otoparkının köşesinde: bilet gişesi, start kapısı, boya büfesi, pit kulübesi. Otoparkın kendisi
+        kaykay parkı.</p>
+    </article>
+    <article class="kart">
+      <img src="img/futbol.webp" alt="Arabalı futbol stadı: yeni çim, kale, dolu tribünler" loading="lazy" width="1920" height="1080">
       <h3>Arabalı futbol</h3>
-      <p>Takviye, zıplama, havada takla, duvarda sürüş. Dolu tribünler, skor tabelası, iki takım.</p>
+      <p>Takviye, zıplama, havada takla, duvarda sürüş. Dolu tribünler, skor tabelası, yeni çim, iki takım.</p>
     </article>
     <article class="kart">
-      <img src="img/yesilcam.jpg" alt="Yeşilçam kafenin önü: rengârenk tente, kaldırımda insanlar, caddede arabalar" loading="lazy">
-      <h3>Yeşilçam kafe</h3>
-      <p>Garsonlar dolaşır, müşteriler gelir oturur. Çay ocağı, çiçekli duvar, eski film havası; masalarda altı oyun.</p>
+      <img src="img/masa.webp" alt="Yeşilçam masası: Ne oynayalım? menüsü — 101 Okey, Tavla, Pişti, Batak, Satranç, Kurusıkı, Poker" loading="lazy" width="1920" height="1080">
+      <h3>Yeşilçam masaları</h3>
+      <p>Okey masasına otur, “Ne oynayalım?” diye sorar: 101 Okey, Tavla, Pişti, Batak, Satranç, Poker, Kurusıkı. Boş sandalyelere bot oturur.</p>
     </article>
     <article class="kart">
-      <img src="img/mahalle.jpg" alt="Stadyum otoparkı yukarıdan: kaykay parkı ve Arabalı Futbol, Boya Kapışması, Sokak Kart girişleri" loading="lazy">
-      <h3>Mini oyunlar</h3>
-      <p>Boya Kapışması, Bomba Sende, Zemin Gidiyor, Çatı Kapışması, Mahalle Yakantopu, Eşya Saklambacı, Go-kart, Sokak Kart,
-        Polis – Hırsız, Metroya Yetiş ve dahası.</p>
+      <img src="img/akademi.webp" alt="Universe Academy'nin kapısındaki giriş totemi" loading="lazy" width="1920" height="1080">
+      <h3>Universe Academy</h3>
+      <p>Spor salonunda bowling, bilardo, basket ve fitness. Kapısındaki totemden gir.</p>
     </article>
     <article class="kart">
-      <img src="img/simge.jpg" alt="Çetin Emeç Stadı: yeşil-kırmızı tribün ve pist" loading="lazy">
-      <h3>Tanıdık yerler</h3>
-      <p>Çetin Emeç Stadı, okullar, hastane, camiler, parklar ve gerçek dükkân adlarıyla caddeler. Kendi sokağını bul.</p>
-    </article>
-    <article class="kart">
-      <img src="img/menu.jpg" alt="Oyun içi menü (F10): Devam et, Ana menüye dön, oyuncu adı ve karakter, Ayarlar / Hata bildir / Öneri" loading="lazy" class="kart-menu">
+      <img src="img/menu.webp" alt="Oyun içi menü (F10): Devam et, Ana menüye dön, oyuncu adı ve karakter; sağda güncelleme notları" loading="lazy" class="kart-menu" width="1920" height="1080">
       <h3>İnternet odaları</h3>
       <p>Biri oda kurar, diğerleri listeden katılır. Radmin, VPN, port açma, hesap yok. Odada en çok 12 kişi.</p>
     </article>
@@ -144,15 +264,15 @@
   <p class="ust-etiket">Galeri</p>
   <h2>Oyundan kareler</h2>
   <div class="galeri">
-    <a href="img/aksam.jpg"><img src="img/aksam.jpg" alt="Akşam, stadyum ve kaykay parkı yukarıdan" loading="lazy"></a>
-    <a href="img/boya-lobi.jpg"><img src="img/boya-lobi.jpg" alt="Boya Kapışması: silah seçimi (Fıskiye, Rulo, Dürbün, Patlatıcı...)" loading="lazy"></a>
-    <a href="img/kaykay-gece.jpg"><img src="img/kaykay-gece.jpg" alt="Gece kaykay parkı" loading="lazy"></a>
-    <a href="img/satranc.jpg"><img src="img/satranc.jpg" alt="Yeşilçam'da satranç tahtası, saat" loading="lazy"></a>
-    <a href="img/futbol-mac.jpg"><img src="img/futbol-mac.jpg" alt="Arabalı futbol: gol! Kalede patlama, havaya uçan arabalar" loading="lazy"></a>
-    <a href="img/gece.jpg"><img src="img/gece.jpg" alt="Gece Bayrampaşa: ışıklı pencereler, cami, caddede arabalar" loading="lazy"></a>
-    <a href="img/cadde-gece.jpg"><img src="img/cadde-gece.jpg" alt="Gece, Yeşilçam'ın önündeki cadde: farlar ve ışıklı vitrinler" loading="lazy"></a>
-    <a href="img/akademi-salon.jpg"><img src="img/akademi-salon.jpg" alt="Universe Academy: koşu bantları, sehpalar, basketbol sahası" loading="lazy"></a>
-    <a href="img/boya-mac.jpg"><img src="img/boya-mac.jpg" alt="Boya Kapışması: maçın ortasında yukarıdan boyanmış pazar yeri" loading="lazy"></a>
+    <a href="img/g-otopark.webp"><img src="img/g-otopark.webp" alt="Akşam, stadyum otoparkı ve kaykay parkı yukarıdan" loading="lazy"></a>
+    <a href="img/g-bowling.webp"><img src="img/g-bowling.webp" alt="Bowling: labutlar devriliyor, ekranda SPLIT yazısı" loading="lazy"></a>
+    <a href="img/g-kart.webp"><img src="img/g-kart.webp" alt="Şamata Kart: start kapısının önünden geçen kart" loading="lazy"></a>
+    <a href="img/g-bomba.webp"><img src="img/g-bomba.webp" alt="Bomba Meydanı: arenada patlamalar" loading="lazy"></a>
+    <a href="img/g-bilardo.webp"><img src="img/g-bilardo.webp" alt="Bilardo: bot nişan alıyor" loading="lazy"></a>
+    <a href="img/g-poker.webp"><img src="img/g-poker.webp" alt="Yeşilçam'da poker: masada kartlar ve fişler" loading="lazy"></a>
+    <a href="img/g-futbol.webp"><img src="img/g-futbol.webp" alt="Arabalı futbol: gol anı" loading="lazy"></a>
+    <a href="img/g-boya.webp"><img src="img/g-boya.webp" alt="Boya Kapışması lobisi: iki takım sahnede" loading="lazy"></a>
+    <a href="img/g-gece-cadde.webp"><img src="img/g-gece-cadde.webp" alt="Gece, Yeşilçam'ın önündeki cadde: farlar ve ışıklı vitrinler" loading="lazy"></a>
   </div>
 </section>
 
@@ -166,7 +286,7 @@
         <h3>Başlatıcıyı indir ve aç</h3>
         <p>Yukarıdaki <b>İNDİR</b> düğmesi küçük bir program verir: <code>Bayrampasa.exe</code>. İndiği yerden (ör. İndirilenler)
           açman yeterli: oyun kendini <code>C:\Program Files\Bayrampasa</code> klasörüne kurar, masaüstüne ve Başlat menüsüne
-          <b>Bayrampaşa</b> kısayolu koyar.</p>
+          <b>Şamata Bayrampasha</b> kısayolu koyar.</p>
       </div>
       <div class="adim-gorsel"><a class="indir-dugme kucuk" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
         <span class="indir-ust">İNDİR</span><span class="indir-alt">Bayrampasa.exe</span></a></div>
@@ -177,7 +297,7 @@
         <p>Program imzasız olduğu için Windows ilk açılışta mavi bir uyarı gösterebilir. Korkma, iki tık:</p>
         <p class="yol"><span>“Windows bilgisayarınızı korudu”</span><i>→</i><span><b>Ek bilgi</b></span><i>→</i><span><b>Yine de çalıştır</b></span></p>
         <p class="ince">Tarayıcı da “sık indirilmeyen dosya” diyebilir: indirilenlerde dosyanın yanındaki menüden <b>Sakla</b>.</p>
-        <p><b>Windows yönetici izni sorarsa “Evet” de.</b> Başlatıcı “Bayrampaşa şuraya kurulacak” der, sonra Windows
+        <p><b>Windows yönetici izni sorarsa “Evet” de.</b> Başlatıcı “Şamata şuraya kurulacak” der, sonra Windows
           “Bu uygulamanın cihazınızda değişiklik yapmasına izin vermek istiyor musunuz?” diye sorar (yayımcı: bilinmiyor).
           Yalnız ilk kurulumda bir kez sorar: Program Files'ta oyunun klasörünü açmak için. Oyun ve başlatıcı yönetici olarak çalışmaz.</p>
         <p class="ince">Oyun zaten kuruluysa başlatıcı bir kez “Program Files'a taşınsın mı?” diye sorar: Evet, sonra Windows'a Evet.
@@ -191,16 +311,16 @@
           ya da pencereyi kapatırsan sorun yok: bir dahaki açılışta kaldığı yerden sürer. Her dosya doğrulanır.
           Sağda yeni sürümde neler değiştiği yazar.</p>
       </div>
-      <figure class="adim-gorsel pencere"><img src="img/baslatici-indiriyor.jpg" alt="Başlatıcı penceresi: arkada oyundan bir kare, oyun iniyor: indirilen MB, yüzde, hız ve kalan süre; sağda güncelleme notları" loading="lazy" width="960" height="600"></figure>
+      <figure class="adim-gorsel pencere"><img src="img/baslatici-indiriyor.webp" alt="Başlatıcı penceresi: arkada oyundan bir kare, oyun iniyor: indirilen MB, yüzde, hız ve kalan süre; sağda güncelleme notları" loading="lazy" width="960" height="600"></figure>
     </li>
     <li class="adim">
       <div class="adim-yazi">
         <h3>OYNA</h3>
         <p>“Oyun güncel. İyi oyunlar!” yazınca <b>OYNA</b>'ya bas. İlk açılış biraz uzun sürebilir (gölgelendiriciler
-          hazırlanıyor). Menüde adını yaz, karakterini seç. Oyunu hep masaüstündeki <b>Bayrampaşa</b> kısayoluyla aç:
+          hazırlanıyor). Menüde adını yaz, karakterini seç. Oyunu hep masaüstündeki <b>Şamata Bayrampasha</b> kısayoluyla aç:
           güncellemeler ancak böyle gelir.</p>
       </div>
-      <figure class="adim-gorsel pencere"><img src="img/baslatici-hazir.jpg" alt="Başlatıcı penceresi: Oyun güncel. İyi oyunlar! Büyük OYNA düğmesi, sağda güncelleme notları" loading="lazy" width="960" height="600"></figure>
+      <figure class="adim-gorsel pencere"><img src="img/baslatici-hazir.webp" alt="Başlatıcı penceresi: Oyun güncel. İyi oyunlar! Büyük OYNA düğmesi, sağda güncelleme notları" loading="lazy" width="960" height="600"></figure>
     </li>
   </ol>
 </section>
@@ -220,7 +340,7 @@
         <li>Oyun içinde <kbd>F10</kbd> menüsünde odanın durumu yazar.</li>
         <li>Windows Güvenlik Duvarı izin sorarsa <b>İzin ver</b> (vermezsen de çoğu zaman bağlanır).</li>
       </ol>
-      <figure><img src="img/menu.jpg" alt="Oyun içi menü (F10): odadayken odanın durumu da burada yazar" loading="lazy"></figure>
+      <figure><img src="img/menu.webp" alt="Oyun içi menü (F10): odadayken odanın durumu da burada yazar" loading="lazy" width="1920" height="1080"></figure>
     </div>
     <div class="sutun">
       <h3>Katılan</h3>
@@ -240,7 +360,7 @@
   <h2>Güncellemeler kendiliğinden</h2>
   <div class="uclu">
     <div class="bilgi"><span class="bilgi-sayi">1</span><h3>Hep başlatıcıyla aç</h3>
-      <p>Masaüstündeki <b>Bayrampaşa</b> kısayolu ya da <code>Bayrampasa.exe</code>. <code>AstraGame.exe</code>'yi doğrudan açarsan güncelleme gelmez.</p></div>
+      <p>Masaüstündeki <b>Şamata Bayrampasha</b> kısayolu ya da <code>Bayrampasa.exe</code>. <code>AstraGame.exe</code>'yi doğrudan açarsan güncelleme gelmez.</p></div>
     <div class="bilgi"><span class="bilgi-sayi">2</span><h3>Küçük ve doğrulanmış</h3>
       <p>Açılışta son sürüme bakar, yalnız değişen parçaları indirir, her dosyayı doğrular, sonra oyunu açar.
         Başlatıcı kendini de günceller.</p></div>
@@ -259,8 +379,10 @@
   <div id="surum-listesi" class="surum-listesi" aria-live="polite"></div>
   <p class="ince ortali" id="surum-kaynak">Liste GitHub'dan canlı okunur.</p>
   <script type="application/json" id="yedek-surumler">
-  [{"tag_name": "OnlineV025", "published_at": "2026-10-25T20:00:00Z",
-    "body": "Boya Kapışması, kaykay parkı, Kurusıkı ve masa oyunları (Tavla, Pişti, Batak, Satranç), Universe Academy'de fitness."}]
+  [{"tag_name": "OnlineV027", "published_at": "2026-10-28T19:30:00Z",
+    "body": "Bowling, Bilardo, Kule Yarışı, Mutfak Telaşı, Basket; denemede Bomba Meydanı ve Şamata Kart; her oyunun kendi lobisi; oyunun yeni adı Şamata: Bayrampasha."},
+   {"tag_name": "OnlineV026", "published_at": "2026-10-26T20:00:00Z",
+    "body": "Poker, yeni krupiye, Boya Kapışması açılışı ve yeni haritalar."}]
   </script>
 </section>
 
@@ -278,7 +400,7 @@
       <h3>İstek / öneri</h3>
       <p>Menüdeki <b>İSTEK / ÖNERİ</b> bölümünden yaz: “şu mekân olsun”, “şu oyun gelsin”… Hepsini okuyoruz.</p>
     </div>
-    <figure class="sutun"><img src="img/f2.jpg" alt="Oyun içi Hata bildir penceresi (F2): Hata / İstek-öneri, açıklama kutusu, ekran görüntüsünü ekle, Gönder" loading="lazy"></figure>
+    <figure class="sutun"><img src="img/f2.webp" alt="Oyun içi Hata bildir penceresi (F2): Hata / İstek-öneri, açıklama kutusu, ekran görüntüsünü ekle, Gönder" loading="lazy"></figure>
   </div>
 </section>
 
@@ -310,23 +432,23 @@
       <p>Program imzasız (imza ücretli) ve az indirildiği için Windows uyarı veriyor. <b>Ek bilgi → Yine de çalıştır</b>.
         Başlatıcı yalnız bu sitenin bağlı olduğu GitHub deposundan indirir ve her dosyayı SHA-256 ile doğrular.</p></details>
     <details><summary>Güncellemeyi ben mi yapacağım?</summary>
-      <p>Hayır. Oyunu her zaman başlatıcıyla (masaüstündeki Bayrampaşa kısayolu) aç; yeni sürüm varsa kendiliğinden ve
+      <p>Hayır. Oyunu her zaman başlatıcıyla (masaüstündeki Şamata Bayrampasha kısayolu) aç; yeni sürüm varsa kendiliğinden ve
         yalnız değişen kısmı indirir.</p></details>
     <details><summary>Arkadaşımın odasını listede göremiyorum.</summary>
       <p>İkiniz de başlatıcıyla açıp aynı sürüme geçin; ODALAR'da <b>YENİLE</b>'ye basın. Ev sahibinin oyunu açık ve odada olmalı.
         Hâlâ yoksa: menüde <b>GELİŞMİŞ: IP İLE</b> (aynı ev ya da Radmin VPN).</p></details>
     <details><summary>Satır turuncu, “farklı sürüm” diyor.</summary>
       <p>Biriniz eski sürümde. Oyunu kapatın, başlatıcıyı açın, güncellesin.</p></details>
-    <details><summary>Boya Kapışması'na, kaykaya, masalara nasıl giderim?</summary>
-      <p>Boya Kapışması, Arabalı Futbol ve Sokak Kart girişleri stadyum otoparkının araba girişinin önündeki köşede; otoparkın tamamı kaykay
-        parkı (kaykaya araç menüsünden, <kbd>B</kbd>). Masa oyunları Yeşilçam kafede, fitness Atışalanı Caddesi'ndeki Universe Academy'de.</p></details>
+    <details><summary>Mini oyunlara, kaykaya, masalara nasıl giderim?</summary>
+      <p>Boya Kapışması, Arabalı Futbol, Şehirde Yarış, Mutfak Telaşı, Bomba Meydanı ve Şamata Kart girişleri stadyum otoparkının araba girişinin önündeki köşede; otoparkın tamamı kaykay
+        parkı (kaykaya araç menüsünden, <kbd>B</kbd>). Masa oyunları Yeşilçam kafede; Bowling, Bilardo, Basket ve fitness Atışalanı Caddesi'ndeki Universe Academy'de; Kule Yarışı İsmetpaşa'daki inşaat arsasında.</p></details>
     <details><summary>F2 ile gönderdiğim rapor nereye gidiyor?</summary>
       <p>Oyunun geliştiricisinin kendi sunucusuna. İçinde yazdığın açıklama, istersen ekran görüntüsü, oyunun son 3 dakikalık
         kaydı, oyundaki konumun ve bilgisayar bilgisi (ekran kartı, bellek) var. Yalnız hataları bulmak için kullanılır.</p></details>
     <details><summary>“Eksik bileşen” / VCRUNTIME hatası alıyorum.</summary>
       <p><code>C:\Program Files\Bayrampasa\Oyun\Engine\Extras\Redist\en-us\vc_redist.x64.exe</code> dosyasını bir kez kur, sonra yeniden aç.</p></details>
     <details><summary>Oyun nereye kuruluyor, nasıl silerim?</summary>
-      <p><code>C:\Program Files\Bayrampasa</code> klasörüne. Silmek için Windows <b>Ayarlar → Uygulamalar → Bayrampaşa → Kaldır</b>:
+      <p><code>C:\Program Files\Bayrampasa</code> klasörüne. Silmek için Windows <b>Ayarlar → Uygulamalar → Şamata: Bayrampasha → Kaldır</b>:
         oyun, ayarları, kayıtları ve kısayolları silinir.</p></details>
     <details><summary>Oyun bir şey bozuldu gibi davranıyor.</summary>
       <p>Başlatıcıda <b>Dosyaları onar</b>'a bas: bütün dosyaları doğrular, bozuk ya da eksik olanı yeniden indirir. Sonra <kbd>F2</kbd> ile anlat.</p></details>
@@ -335,23 +457,25 @@
 
 <!-- ============================================================ SON ÇAĞRI -->
 <section class="son-cagri">
-  <img class="son-gorsel" src="img/gece.jpg" alt="" loading="lazy">
+  <img class="son-gorsel" src="img/gece.webp" alt="" loading="lazy">
   <div class="son-ic">
     <h2>Mahalle seni bekliyor</h2>
     <a class="indir-dugme" href="https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe">
-      <span class="indir-ust">İNDİR</span><span class="indir-alt"><span data-surum>OnlineV025</span> · ücretsiz</span></a>
+      <span class="indir-ust">İNDİR</span><span class="indir-alt"><span data-surum>OnlineV027</span> · ücretsiz</span></a>
   </div>
 </section>
 </main>
 
 <!-- ============================================================ ALT BİLGİ -->
 <footer class="alt">
-  <p class="alt-baslik">BAYRAMPAŞA <span class="rozet-test kucuk">TEST</span></p>
+  <p class="alt-baslik" aria-label="Şamata: Bayrampasha, test sürümü"><span class="marka-kucuk"><img src="img/simge-64.png" alt="" width="30" height="30"><span class="marka-kucuk-ad" aria-hidden="true">ŞAMATA</span><span class="marka-kucuk-kurdele" aria-hidden="true">BAYRAMPASHA</span></span> <span class="rozet-test kucuk">TEST</span></p>
   <p>Kâr amacı gütmeyen bir arkadaş projesi. Ücretsiz; reklam, satış, izleme yok.</p>
   <p class="atif">Harita verisi © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> katkıcıları (ODbL).
     Şehir, mobilya ve ses parçaları: <a href="https://www.kenney.nl">Kenney</a> (CC0). Animasyonlar: Quaternius (CC0), Mixamo.
     Arabalı futbol araçları: “Fennec / Octane / Dominus – Rocket League Car”, Jako (sketchfab.com/fairlight51), CC BY 4.0 — hayran
     modelleri; Psyonix ve Epic Games ile ilgisi yoktur. “Honda Civic Type-R”, shindedhirendra780, CC BY 4.0.
+    Bilardo masası, lamba, ıstaka ve toplar: “Pool Table Traditional”, fizyman (sketchfab.com/fizyman), CC BY 4.0.
+    Şamata Kart pisti: Candela City, Jean-Manuel “samuncle” Clémençon (SuperTuxKart), CC BY-SA 4.0.
     Satranç motoru: Stockfish (GPL v3). Yazı tipleri: Titan One ve Rubik (SIL Open Font License). Unreal Engine ile yapıldı.</p>
   <p class="atif"><a href="https://github.com/EddizEge/BayrampashaGame/releases">Bütün sürümler (GitHub)</a></p>
 </footer>

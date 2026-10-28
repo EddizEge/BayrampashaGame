@@ -1,4 +1,4 @@
-// Bayrampaşa sitesi: son sürüm adı / başlatıcı boyutu GitHub'dan canlı (api.github.com CORS'a açık). Sürüm notları önce sitenin
+// Şamata: Bayrampasha sitesi: son sürüm adı / başlatıcı boyutu GitHub'dan canlı (api.github.com CORS'a açık). Sürüm notları önce sitenin
 // kendi guncelleme_notlari.json'undan (başlatıcı ve oyunun okuduğu dosyanın taslaksız kopyası; Site-Yayinla.ps1 koyar), yoksa
 // GitHub sürüm açıklamalarından, o da yoksa sayfadaki gömülü yedek listeden. İzleme / çerez yok.
 (function () {
@@ -95,13 +95,16 @@
       .catch(function () { /* yedek liste kalır */ });
   }
 
-  // galeri: büyütme (dialog), ok tuşları ve kaydırma
+  // galeri ve "Bütün oyunlar"daki büyüyen döşemeler (data-buyut): büyütme (dialog); oklar / kaydırma açılan kümenin içinde gezer
   var dlg = document.getElementById("buyut");
-  var linkler = Array.prototype.slice.call(document.querySelectorAll(".galeri a"));
-  if (dlg && dlg.showModal && linkler.length) {
-    var img = dlg.querySelector("img"), sira = 0;
+  var kumeler = [".galeri a", "a[data-buyut]"].map(function (q) { return Array.prototype.slice.call(document.querySelectorAll(q)); })
+    .filter(function (k) { return k.length; });
+  if (dlg && dlg.showModal && kumeler.length) {
+    var img = dlg.querySelector("img"), sira = 0, linkler = kumeler[0];
     function goster(i) { sira = (i + linkler.length) % linkler.length; var a = linkler[sira]; img.src = a.href; img.alt = a.querySelector("img").alt; }
-    linkler.forEach(function (a, i) { a.addEventListener("click", function (e) { e.preventDefault(); goster(i); dlg.showModal(); }); });
+    kumeler.forEach(function (k) {
+      k.forEach(function (a, i) { a.addEventListener("click", function (e) { e.preventDefault(); linkler = k; goster(i); dlg.showModal(); }); });
+    });
     dlg.querySelector(".buyut-kapat").addEventListener("click", function () { dlg.close(); });
     dlg.querySelector(".sol").addEventListener("click", function () { goster(sira - 1); });
     dlg.querySelector(".sag").addEventListener("click", function () { goster(sira + 1); });

@@ -1,4 +1,4 @@
-/* Bayrampaşa sitesi (2026-10-25, V025): oyunun bugünkü dili — Boya Kapışması lobisi ve oyun arayüzü (AstraUiStyle): koyu mürekkep
+/* Şamata: Bayrampasha sitesi (2026-10-25, V025; ad + logo 2f 2026-10-27): oyunun bugünkü dili — Boya Kapışması lobisi ve oyun arayüzü (AstraUiStyle): koyu mürekkep
    zemin, altın vurgu (BAŞLAT / OYNA), pembe ve nane takım renkleri, başlıklar Titan One, metin Rubik. Yazı tipleri yerel dosya
    (font/, OFL; dış kaynak yok: CSP 'self'); Titan One'da İ yok, o harf Rubik Black'ten (unicode-range), oyundaki gibi.
    Hareket: düğmelere basınca küçülme (160 ms), açılışta kahramanın bir kez belirmesi; sürekli hareket yok. Telefona öncelikli. */
@@ -33,7 +33,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 68px; -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--murekkep); color: var(--yazi); font: 400 16px/1.6 var(--metin); }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 html, body { overflow-x: hidden; }
 main, section, figure { min-width: 0; }
 a { color: var(--altin); text-underline-offset: 3px; }
@@ -51,7 +51,19 @@ kbd {
   padding: 10px 18px; background: rgba(11, 8, 20, .78); backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid var(--cizgi);
 }
-.logo { flex-shrink: 0; font: 1.15rem/1 var(--baslik); letter-spacing: .03em; color: var(--altin); text-decoration: none; white-space: nowrap; }
+/* küçük marka (üst çubuk + alt bilgi): simge + ŞAMATA + kurdele. Küçük boyda kontur / gölge kalın (logo 2f'nin küçük hali, simge gibi) */
+.logo { flex-shrink: 0; text-decoration: none; }
+.marka-kucuk { display: inline-flex; align-items: center; gap: 9px; white-space: nowrap; }
+.marka-kucuk img { width: 30px; height: 30px; flex-shrink: 0; }
+.marka-kucuk-ad {
+  font: 1.32rem/1 var(--baslik); letter-spacing: .02em; color: var(--altin);
+  -webkit-text-stroke: 3px #3a0f2c; paint-order: stroke fill; text-shadow: 0 2px 0 #3a0f2c;
+}
+.marka-kucuk-kurdele {
+  font: .6rem/1 var(--baslik); letter-spacing: .08em; color: #fff; background: var(--pembe);
+  padding: 4px 7px 3px; border-radius: 5px; transform: rotate(-3deg); box-shadow: 0 2px 0 #3a0f2c;
+}
+.gorunmez { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .menu { display: flex; gap: 2px; overflow-x: auto; min-width: 0; scrollbar-width: none; flex: 1; mask-image: linear-gradient(90deg, #000 85%, transparent); }
 .menu::-webkit-scrollbar { display: none; }
 .menu a { color: var(--soluk); text-decoration: none; padding: 6px 11px; border-radius: 999px; white-space: nowrap; font-size: .95rem; font-weight: 500;
@@ -71,10 +83,24 @@ kbd {
               linear-gradient(90deg, rgba(11, 8, 20, .78) 0%, rgba(11, 8, 20, .25) 55%, transparent 80%);
 }
 .kahraman-ic { padding: 28px 20px 48px; max-width: 780px; }
-.kahraman h1 {
-  margin: .18em 0 .08em; font: clamp(3rem, 13vw, 7.2rem)/.92 var(--baslik); letter-spacing: .01em; color: #fff;
-  text-shadow: 0 .05em 0 #3a0f2c, 0 .09em 0 rgba(0, 0, 0, .35), 0 20px 50px rgba(0, 0, 0, .55);
-  -webkit-text-stroke: .02em rgba(0, 0, 0, .25);
+/* logo 2f (_shared/marka/KARAR.md, tasarim/PartiYukleme.dc.html): değerler 148 px'lik tasarımdan em'e (÷148); kurdele kendi yazısına göre (÷48) */
+.marka { display: inline-flex; flex-direction: column; align-items: center; margin: .14em 0 .12em; font: clamp(3.4rem, 19vw, 9.25rem)/1 var(--baslik); }
+.marka-kelime {
+  display: flex; align-items: flex-end; gap: .0135em; color: var(--altin);
+  -webkit-text-stroke: .054em #3a0f2c; paint-order: stroke fill;
+  text-shadow: 0 .034em 0 #d99a00, 0 .068em 0 #a86c00, 0 .101em 0 #3a0f2c, 0 .19em .23em rgba(0, 0, 0, .55);
+}
+.marka-kelime > span { display: inline-block; }
+.marka-kelime > :nth-child(1) { transform: rotate(-7deg); }
+.marka-kelime > :nth-child(2) { transform: translateY(-.0676em) rotate(4deg); }
+.marka-kelime > :nth-child(3) { transform: translateY(.0338em) rotate(-3deg); }
+.marka-kelime > :nth-child(4) { transform: translateY(-.0541em) rotate(6deg); }
+.marka-kelime > :nth-child(5) { transform: translateY(.0203em) rotate(-5deg); }
+.marka-kelime > :nth-child(6) { transform: translateY(-.0811em) rotate(7deg); }
+.marka-kurdele {
+  margin-top: .42em; font-size: .324em; line-height: 1; letter-spacing: .06em; color: #fff; background: var(--pembe);
+  padding: .29em .75em .19em; border-radius: .27em; transform: rotate(-3deg);
+  box-shadow: 0 .125em 0 #3a0f2c, 0 .375em .58em rgba(0, 0, 0, .5);
 }
 .slogan { font-size: clamp(1.08rem, 3.6vw, 1.4rem); color: #ece8f6; max-width: 32em; margin: .4em 0 1.2em; font-weight: 500; text-wrap: pretty; }
 .kahraman-eylem { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
@@ -85,6 +111,8 @@ kbd {
   padding: 7px 12px 6px; border-radius: 8px; background: var(--pembe); transform: rotate(-3deg);
   box-shadow: 0 6px 22px rgba(255, 61, 158, .45);
 }
+.kahraman .rozet-test { background: var(--nane); color: #062a1c; box-shadow: 0 6px 22px rgba(47, 227, 162, .3); }
+.alt-baslik .rozet-test { background: var(--nane); color: #062a1c; }
 .rozet-test.kucuk { font-size: .66rem; padding: 4px 8px 3px; vertical-align: middle; transform: none; box-shadow: none; }
 
 /* İNDİR: oyundaki BAŞLAT düğmesi gibi altın, koyu yazı; basınca biraz küçülür */
@@ -114,7 +142,17 @@ kbd {
   .kahraman-ic > :nth-child(4) { animation-delay: .18s; }
   .kahraman-ic > :nth-child(5) { animation-delay: .24s; }
   .kahraman-ic > .rozet-test { animation-name: belir-rozet; }
+  .kahraman-ic > .marka { animation: none; }
+  .marka-kelime > span { animation: harf .5s var(--cikis) both; }
+  .marka-kelime > :nth-child(2) { animation-delay: .04s; }
+  .marka-kelime > :nth-child(3) { animation-delay: .08s; }
+  .marka-kelime > :nth-child(4) { animation-delay: .12s; }
+  .marka-kelime > :nth-child(5) { animation-delay: .16s; }
+  .marka-kelime > :nth-child(6) { animation-delay: .2s; }
+  .marka-kurdele { animation: kurdele .45s var(--cikis) .26s both; }
 }
+@keyframes harf { from { opacity: 0; translate: 0 .16em; } }
+@keyframes kurdele { from { opacity: 0; scale: .94; } }
 @keyframes belir { from { opacity: 0; transform: translateY(14px); } }
 @keyframes belir-rozet { from { opacity: 0; transform: translateY(14px) rotate(-3deg); } }
 
@@ -134,26 +172,143 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 .ortali { text-align: center; margin-top: 26px; }
 .turuncu { color: var(--turuncu); font-weight: 600; }
 
-/* öne çıkanlar (V025): büyük kare + yazı, sırayla sağ / sol */
+/* Bütün oyunlar (#oyunlar): hero'nun hemen altında, ilk ekranda başlığı ve ilk sırası görünür. Her oyun aynı boy döşeme (16:9 kare + ad +
+   tek satır + kişi / giriş). Döşeme bağlantı: yenilerde "Bu güncellemede"ki kartına kayar, öbürlerinde karesi büyür (#buyut).
+   Masaüstünde mini oyunlar 5'li; altta masa (4'lü, 2 sıra) + şehir (1'li, 2 sıra) aynı ızgaraya oturur: boş hücre yok. */
+.bolum.oyunlar { padding-top: 36px; }
+.oyunlar-bas { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 4px 24px; margin-bottom: 18px; }
+.oyunlar-bas h2 { margin: 0; }
+.oyunlar-bas .ince { margin: 0 0 .35em; max-width: 30em; }
+.grup-ad { font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--soluk); margin: 0 0 10px; }
+.grup-ad span { letter-spacing: .02em; text-transform: none; font-weight: 500; color: var(--silik); margin-left: .5em; }
+.dosemeler { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.oyunlar-alt { display: grid; gap: 26px 12px; margin-top: 26px; }
+.doseme {
+  display: flex; flex-direction: column; height: 100%; text-decoration: none; color: var(--yazi); background: var(--yuzey);
+  border: 1px solid var(--cizgi); border-radius: 14px; overflow: hidden; transition: transform .16s var(--cikis), border-color .15s ease;
+}
+.doseme:active { transform: scale(.98); }
+.doseme:focus-visible { outline: 2px solid var(--altin); outline-offset: 2px; }
+.doseme-gorsel { position: relative; display: block; overflow: hidden; background: var(--murekkep2); }
+.doseme-gorsel img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transition: transform .35s var(--cikis); }
+.doseme-ad { font: 1.08rem/1.1 var(--baslik); padding: 10px 12px 0; letter-spacing: .01em; }
+.doseme-tan { font-size: .85rem; line-height: 1.35; color: var(--soluk); padding: 4px 12px 0;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: calc(2 * 1.35em + 4px); }
+.doseme-bilgi { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 12px 12px; margin-top: auto; }
+.doseme-bilgi span { font-size: .72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(255, 255, 255, .07); color: #ddd8ea; }
+.doseme-bilgi span:first-child { background: rgba(255, 197, 49, .14); color: var(--altin-ust); }
+.isaret { position: absolute; top: 8px; left: 8px; font: .66rem/1 var(--baslik); letter-spacing: .1em; padding: 5px 8px 4px; border-radius: 6px;
+  transform: rotate(-3deg); box-shadow: 0 4px 14px rgba(0, 0, 0, .35); }
+.isaret.yeni { background: var(--altin); color: var(--altin-yazi); }
+.isaret.deneme { background: var(--turuncu); color: #2a1200; }
+/* başlık rengi: oyunun kendi vurgusu ("Bu güncellemede" ile aynı) */
+.doseme.d-bowling .doseme-ad { color: var(--mavi); }
+.doseme.d-bilardo .doseme-ad, .doseme.d-tavla .doseme-ad, .doseme.d-okey .doseme-ad { color: var(--nane); }
+.doseme.d-kule .doseme-ad, .doseme.d-poker .doseme-ad, .doseme.d-fitness .doseme-ad { color: var(--altin); }
+.doseme.d-mutfak .doseme-ad, .doseme.d-kaykay .doseme-ad { color: var(--turuncu); }
+.doseme.d-basket .doseme-ad, .doseme.d-boya .doseme-ad, .doseme.d-pisti .doseme-ad { color: var(--pembe); }
+.doseme.d-bomba .doseme-ad, .doseme.d-kurusiki .doseme-ad { color: #ff6b5a; }
+.doseme.d-samata .doseme-ad { color: #b48cff; }
+.doseme.d-futbol .doseme-ad, .doseme.d-yaris .doseme-ad, .doseme.d-batak .doseme-ad, .doseme.d-satranc .doseme-ad { color: #7fb2ff; }
+@media (hover: hover) and (pointer: fine) {
+  .doseme:hover { border-color: rgba(255, 255, 255, .22); }
+  .doseme:hover .doseme-gorsel img { transform: scale(1.04); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .doseme, .doseme-gorsel img { transition: none; }
+}
+@media (max-width: 719px) {
+  .doseme-tan { -webkit-line-clamp: 3; min-height: calc(3 * 1.35em + 4px); }   /* telefonda döşeme dar: tanıtım kesilmesin */
+}
+@media (min-width: 720px) {
+  .dosemeler-masa { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 1040px) {
+  .bolum.oyunlar { padding-top: 40px; }
+  .dosemeler-mini { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .oyunlar-alt { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .grup-masa { grid-column: span 4; }
+  .dosemeler-sehir { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Bu güncellemede (V027): oyun kartları (ilki geniş), denemedekiler rozetli, öne çıkan Şehirde Yarış, lobi şeridi, ufak yenilikler.
+   Kartlar tıklanmaz: üstüne gelince büyüme yok (yalnız galeri büyür). Her oyunun başlık rengi kendi lobisinin vurgusu. */
 .one-cikan { display: grid; gap: 20px; align-items: center; margin: 0 0 56px; }
 .one-cikan:last-child { margin-bottom: 0; }
 .one-gorsel { margin: 0; border-radius: 22px; overflow: hidden; box-shadow: var(--golge); position: relative; background: var(--yuzey); }
-.one-gorsel img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.one-gorsel img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .one-gorsel::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1); pointer-events: none; }
 .one-yazi h3 { font: clamp(1.7rem, 5vw, 2.3rem)/1.05 var(--baslik); margin: 0 0 .35em; }
 .one-yazi p { color: #ddd8ea; margin: 0 0 .8em; }
-.boya .one-yazi h3 { color: var(--pembe); }
-.kaykay .one-yazi h3 { color: var(--altin); }
-.masa .one-yazi h3 { color: var(--nane); }
-.akademi .one-yazi h3 { color: var(--mavi); }
-.boya .one-gorsel { box-shadow: 0 18px 60px rgba(255, 61, 158, .22), var(--golge); }
-.takimlar { display: flex; align-items: center; gap: 10px; margin: 0 0 .6em; }
-.takim { font: .95rem/1 var(--baslik); letter-spacing: .06em; padding: 7px 12px 6px; border-radius: 8px; color: #fff; }
-.takim.pembe { background: var(--pembe); }
-.takim.nane { background: var(--nane); color: #062a1d; }
-.vs { font: .9rem/1 var(--baslik); color: var(--silik); }
-.cipler { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: .4em 0 0; }
-.cipler li { background: rgba(47, 227, 162, .1); border: 1px solid rgba(47, 227, 162, .35); color: #c9f7e6; padding: 4px 12px; border-radius: 999px; font-size: .9rem; font-weight: 500; }
+.ust-not { font-size: .78rem !important; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--turuncu) !important; margin: 0 0 .5em !important; }
+.yaris .one-yazi h3 { color: var(--mavi); }
+.yaris .one-gorsel { box-shadow: 0 18px 60px rgba(76, 141, 255, .2), var(--golge); }
+
+.yeni-oyunlar, .deneme-oyunlar { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+.oyun-kart { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: var(--yaricap); overflow: hidden; display: flex; flex-direction: column; }
+.oyun-gorsel { margin: 0; position: relative; background: var(--murekkep2); }
+.oyun-gorsel img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.oyun-yazi { padding: 16px 18px 20px; }
+.oyun-yazi h3 { font: 1.6rem/1.05 var(--baslik); margin: 0 0 .4em; }
+.oyun-yazi p { color: var(--soluk); margin: 0; }
+.oyun-bilgi { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0 0 .7em; }
+.oyun-bilgi li { font-size: .84rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: rgba(255, 255, 255, .07); color: #ddd8ea; }
+.oyun-bilgi li:first-child { background: rgba(255, 197, 49, .14); color: var(--altin-ust); font-variant-numeric: tabular-nums; }
+.bowling h3 { color: var(--mavi); }
+.bilardo h3 { color: var(--nane); }
+.kule h3 { color: var(--altin); }
+.mutfak h3 { color: var(--turuncu); }
+.basket h3 { color: var(--pembe); }
+.bomba h3 { color: #ff6b5a; }
+.samata h3 { color: #b48cff; }
+.rozet-deneme {
+  position: absolute; top: 12px; left: 12px; font: .8rem/1 var(--baslik); letter-spacing: .1em; color: #2a1200;
+  background: var(--turuncu); padding: 7px 11px 6px; border-radius: 8px; transform: rotate(-3deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+}
+.deneme-bas { margin: 46px 0 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.deneme-bas h3 { font: 1.7rem/1.1 var(--baslik); margin: 0; color: var(--turuncu); }
+.deneme-bas p { margin: 0; }
+.yaris { margin-top: 56px; }
+
+.lobiler { margin: 56px 0 0; }
+.lobi-yazi h3 { font: clamp(1.5rem, 4.4vw, 2rem)/1.1 var(--baslik); margin: 0 0 .35em; color: #fff; }
+.lobi-yazi p { color: #ddd8ea; margin: 0 0 18px; max-width: 44em; }
+/* telefonda yana kaydırılan şerit (sonraki kare kenardan görünür), geniş ekranda 3'lü ızgara */
+.lobi-serit { list-style: none; margin: 0 -20px; padding: 0 20px 6px; display: grid; grid-auto-flow: column; grid-auto-columns: 76%; gap: 12px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 20px; scrollbar-width: none; }
+.lobi-serit::-webkit-scrollbar { display: none; }
+.lobi-serit li { scroll-snap-align: start; }
+.lobi-serit figure { margin: 0; }
+.lobi-serit img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; background: var(--yuzey); box-shadow: 0 0 0 1px var(--cizgi); }
+.lobi-serit figcaption { font-size: .9rem; color: var(--silik); margin-top: 8px; }
+.lobi-serit figcaption b { color: var(--yazi); margin-right: .35em; }
+
+.ufak-yenilikler { list-style: none; margin: 56px 0 0; padding: 0; display: grid; gap: 14px; }
+.ufak-yenilikler li { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 14px; overflow: hidden; display: grid;
+  grid-template-columns: 38% minmax(0, 1fr); align-items: center; }
+.ufak-yenilikler img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; grid-row: span 2; }
+.ufak-yenilikler h3 { margin: 12px 14px 0; font-size: 1.05rem; align-self: end; }
+.ufak-yenilikler p { margin: 2px 14px 12px; color: var(--soluk); font-size: .9rem; align-self: start; }
+
+@media (min-width: 720px) {
+  .yeni-oyunlar, .deneme-oyunlar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .yeni-oyunlar .oyun-kart:first-child { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: center; }
+  .yeni-oyunlar .oyun-kart:first-child .oyun-gorsel, .yeni-oyunlar .oyun-kart:first-child .oyun-gorsel img { height: 100%; }
+  .yeni-oyunlar .oyun-kart:first-child .oyun-yazi { padding: 22px 26px; }
+  .yeni-oyunlar .oyun-kart:first-child h3 { font-size: 2.2rem; }
+  .lobi-serit { margin: 0; padding: 0; grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; gap: 18px 14px; }
+  .ufak-yenilikler { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ufak-yenilikler li { grid-template-columns: 1fr; align-items: start; align-content: start; }
+  .ufak-yenilikler h3, .ufak-yenilikler p { align-self: auto; }
+  .ufak-yenilikler img { aspect-ratio: 16 / 9; grid-row: auto; height: auto; }
+  .ufak-yenilikler h3 { margin-top: 14px; }
+  .ufak-yenilikler p { margin-bottom: 16px; }
+}
+@media (min-width: 1040px) {
+  .yeni-oyunlar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .yeni-oyunlar .oyun-kart:first-child { grid-column: span 2; }
+}
 
 /* özellik kartları */
 .kartlar { display: grid; gap: 18px; grid-template-columns: 1fr; }
@@ -249,7 +404,7 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 
 /* alt bilgi */
 .alt { padding: 44px 20px 64px; text-align: center; color: var(--silik); border-top: 1px solid var(--cizgi); font-size: .92rem; }
-.alt-baslik { font: 1.1rem/1 var(--baslik); letter-spacing: .04em; color: var(--yazi); }
+.alt-baslik { display: flex; justify-content: center; align-items: center; gap: 10px; margin: 0 0 1em; }
 .atif { max-width: 62em; margin: .7em auto; font-size: .84rem; }
 
 /* büyütme (dialog: ortadan, kısa) */
@@ -278,8 +433,12 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 }
 
 /* ---------------------------------------------------------------- ekran boyları */
+@media (max-width: 719px) {
+  .ust .marka-kucuk-kurdele { display: none; }
+}
 @media (max-width: 420px) {
-  .logo { font-size: 1rem; }
+  .marka-kucuk-ad { font-size: 1.15rem; }
+  .marka-kucuk img { width: 26px; height: 26px; }
   .menu a { padding: 6px 8px; font-size: .9rem; }
   .indir-dugme { width: 100%; }
   .ikincil-dugme { width: 100%; text-align: center; }
@@ -307,6 +466,13 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
   html { scroll-behavior: auto; }
   .galeri img, .indir-dugme, .ust-indir, .ikincil-dugme, .buyut button { transition: none; }
   .buyut[open] img { animation: none; }
+}
+
+/* geniş ekranda hero içeriği kadar (görsel yine tam): "Bütün oyunlar"ın başlığı ve ilk sırası ilk ekranda görünsün; üç düğme tek satır */
+@media (min-width: 960px) {
+  .kahraman { min-height: 0; }
+  .kahraman-ic { padding: 40px 52px 36px; max-width: 900px; }
+  .kahraman-eylem { flex-wrap: nowrap; }
 }
 
 /* ---------------------------------------------------------------- yol haritası sayfası (yol-haritasi.html)
