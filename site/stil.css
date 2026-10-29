@@ -34,7 +34,8 @@
 html { scroll-behavior: smooth; scroll-padding-top: 68px; -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--murekkep); color: var(--yazi); font: 400 16px/1.6 var(--metin); }
 img { max-width: 100%; height: auto; display: block; }
-html, body { overflow-x: hidden; }
+html { overflow-x: hidden; }
+body { overflow-x: clip; }   /* hidden değil: body kaydırma kabı olursa üst çubuk yapışmaz */
 main, section, figure { min-width: 0; }
 a { color: var(--altin); text-underline-offset: 3px; }
 b { font-weight: 600; }
@@ -201,11 +202,12 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
   transform: rotate(-3deg); box-shadow: 0 4px 14px rgba(0, 0, 0, .35); }
 .isaret.yeni { background: var(--altin); color: var(--altin-yazi); }
 .isaret.deneme { background: var(--turuncu); color: #2a1200; }
+.isaret.yakinda { background: var(--nane); color: #04261a; }
 /* başlık rengi: oyunun kendi vurgusu ("Bu güncellemede" ile aynı) */
 .doseme.d-bowling .doseme-ad { color: var(--mavi); }
 .doseme.d-bilardo .doseme-ad, .doseme.d-tavla .doseme-ad, .doseme.d-okey .doseme-ad { color: var(--nane); }
 .doseme.d-kule .doseme-ad, .doseme.d-poker .doseme-ad, .doseme.d-fitness .doseme-ad { color: var(--altin); }
-.doseme.d-mutfak .doseme-ad, .doseme.d-kaykay .doseme-ad { color: var(--turuncu); }
+.doseme.d-mutfak .doseme-ad, .doseme.d-kaykay .doseme-ad, .doseme.d-dama .doseme-ad { color: var(--turuncu); }
 .doseme.d-basket .doseme-ad, .doseme.d-boya .doseme-ad, .doseme.d-pisti .doseme-ad { color: var(--pembe); }
 .doseme.d-bomba .doseme-ad, .doseme.d-kurusiki .doseme-ad { color: #ff6b5a; }
 .doseme.d-samata .doseme-ad { color: #b48cff; }
