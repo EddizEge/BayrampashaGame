@@ -1,6 +1,27 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV028",
+                         "tarih":  "2026-10-29",
+                         "baslik":  "F2 düzeltmeleri: Boya\u0027da takım değiştir + bot ekle / çıkar, yolcu FPS kamerası, trafik yığılması, uzaktan vuruş, Arabalı Futbol menüsü, bilardo izleme kamerası",
+                         "maddeler":  [
+                                          "Boya Kapışması: lobide T ile takım değiştir; ev sahibi oyuncunun yanındaki okla onu öteki takıma taşır, + BOT / − BOT (B / Shift+B) ve botun yanındaki × ile bot ekler / çıkarır. Lobi ekranı cilalandı: düğmeler her çözünürlükte sığıyor, geri sayım ortada; gölgede kalan yerler artık kapkara değil",
+                                          "Arabada yan koltukta FPS (V) kamerası artık tavanın üstünde değil, yolcunun gözünde; TPS\u0027ye geçip dönmek gerekmiyor",
+                                          "Şehirde bir yerde durunca çevrende trafik yığılmıyor: yakındaki araç sayısı dengeli, takılan kuyruk kendiliğinden çözülüyor",
+                                          "Şehir çatışması: vuruş artık karakterin gövdesine, kollarına, bacaklarına göre (eski iri kutu yok); ıskaladığın atış vurmuyor, uzaktaki arkadaşa gecikmeye göre adil vuruş",
+                                          "Arabalı Futbol: lobide ESC / Ayarlar açıkken maç başlarsa menü takılı kalmıyor, araba hemen sürülüyor",
+                                          "Bilardo: vuruştan sonra kamera bütün masayı gösterir, toplar durunca sıradaki oyuncuya döner (C ile takip kamerası); vuruş anındaki takılma giderildi",
+                                          "Kule Yarışı: her düşen blok bir kez sayılıyor (Hayatta Kal\u0027da kalp kaybı doğru), kuleye değmeden düşen parça da sayılıyor; baretler kafaya oturuyor; lobide karakter artık yürümüyor",
+                                          "Mutfak Telaşı: lobideki yazılar her çözünürlükte panelin içinde",
+                                          "Universe Academy spor salonu: bench, lat, kürek ve barfikste karakterler aletin içine gömülmüyor, eller barda",
+                                          "Şehirde Yarış: gece yarışında farlar arabaları beyaza boğmuyor (kendi farın yolu aydınlatır, ötekiler yerde iz bırakır); gizli şehir arabalarının sesi kesildi",
+                                          "Şamata Kart (denemede): motor sesi kısıldı, ESC ile çıkış temiz, Klasik sürüş varsayılan ve ÖNERİLEN, botlar çoğunlukla Klasik",
+                                          "Mini oyun girişlerine (kulübe, araba, şantiye...) artık tırmanılmıyor",
+                                          "Kurusıkı: krupiye testereliyken artık hep rakibe sıkıyor; ses uyarısı seli kesildi",
+                                          "Bomba Meydanı (denemede): ısınma, kazanan sandığı ve vuruş durması cilası, yeni sesler"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV027",
                          "tarih":  "2026-10-28",
                          "baslik":  "Bowling, Bilardo, Kule Yarışı, Mutfak Telaşı, Basket; denemede Bomba Meydanı ve Şamata Kart; her oyunun kendi lobisi",
