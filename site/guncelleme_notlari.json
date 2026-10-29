@@ -1,6 +1,16 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV028b",
+                         "tarih":  "2026-10-29",
+                         "baslik":  "V028\u0027e ek: Türk daması geldi, Yeşilçam masalarında bota ya da arkadaşına karşı",
+                         "maddeler":  [
+                                          "Dama (Türk daması): okey masasına otur, \"Ne oynayalım?\" menüsünden Dama\u0027yı seç. Taşlar ileri ve yana gider, alma zorunlu (alınacak taşlar halkayla gösterilir), karşıya varan taş dama olur",
+                                          "Bot kolay / orta / zor; zor bot düşünürken oyun takılmıyor. Dama olan taşın işareti menüden seçilir: üst üste iki pul ya da altın taç",
+                                          "Lobilerde yürüme: bir oyunun lobisindeyken ESC / ayarlar ya da F2 açılıp kapanınca karakter yerinde takılı kalmıyor"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV028",
                          "tarih":  "2026-10-29",
                          "baslik":  "F2 düzeltmeleri: Boya\u0027da takım değiştir + bot ekle / çıkar, yolcu FPS kamerası, trafik yığılması, uzaktan vuruş, Arabalı Futbol menüsü, bilardo izleme kamerası",
