@@ -1,7 +1,7 @@
 # BAYRAMPAŞA
 
 Bayrampaşa'da geçen, arkadaşlarla oynanan açık dünya: yaşayan şehir, Yeşilçam kafe, 101 Okey, arabalı futbol,
-mini oyunlar ve VPN'siz internet odaları. **Test sürümü**: hata görürsen oyunda **F2**.
+mini oyunlar ve arkadaşlarla internet odaları. **Test sürümü**: hata görürsen oyunda **F2**.
 
 ### ⬇ [İNDİR — Bayrampasa.exe](https://github.com/EddizEge/BayrampashaGame/releases/latest/download/Bayrampasa.exe)
 
