@@ -175,7 +175,7 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 
 /* Bütün oyunlar (#oyunlar): hero'nun hemen altında, ilk ekranda başlığı ve ilk sırası görünür. Her oyun aynı boy döşeme (16:9 kare + ad +
    tek satır + kişi / giriş). Döşeme bağlantı: yenilerde "Bu güncellemede"ki kartına kayar, öbürlerinde karesi büyür (#buyut).
-   Masaüstünde mini oyunlar 5'li; altta masa (4'lü, 2 sıra) + şehir (1'li, 2 sıra) aynı ızgaraya oturur: boş hücre yok. */
+   Masaüstünde mini oyunlar 4'lü (12 oyun, 3 sıra); altta masa (4'lü, 2 sıra) + şehir (1'li, 2 sıra) 5'li ızgaraya oturur: boş hücre yok. */
 .bolum.oyunlar { padding-top: 36px; }
 .oyunlar-bas { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 4px 24px; margin-bottom: 18px; }
 .oyunlar-bas h2 { margin: 0; }
@@ -204,12 +204,12 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 .isaret.deneme { background: var(--turuncu); color: #2a1200; }
 .isaret.yakinda { background: var(--nane); color: #04261a; }
 /* başlık rengi: oyunun kendi vurgusu ("Bu güncellemede" ile aynı) */
-.doseme.d-bowling .doseme-ad { color: var(--mavi); }
+.doseme.d-bowling .doseme-ad, .doseme.d-tenis .doseme-ad { color: var(--mavi); }
 .doseme.d-bilardo .doseme-ad, .doseme.d-tavla .doseme-ad, .doseme.d-okey .doseme-ad { color: var(--nane); }
 .doseme.d-kule .doseme-ad, .doseme.d-poker .doseme-ad, .doseme.d-fitness .doseme-ad { color: var(--altin); }
 .doseme.d-mutfak .doseme-ad, .doseme.d-kaykay .doseme-ad, .doseme.d-dama .doseme-ad { color: var(--turuncu); }
 .doseme.d-basket .doseme-ad, .doseme.d-boya .doseme-ad, .doseme.d-pisti .doseme-ad { color: var(--pembe); }
-.doseme.d-bomba .doseme-ad, .doseme.d-kurusiki .doseme-ad { color: #ff6b5a; }
+.doseme.d-bomba .doseme-ad, .doseme.d-kurusiki .doseme-ad, .doseme.d-boks .doseme-ad { color: #ff6b5a; }
 .doseme.d-samata .doseme-ad { color: #b48cff; }
 .doseme.d-futbol .doseme-ad, .doseme.d-yaris .doseme-ad, .doseme.d-batak .doseme-ad, .doseme.d-satranc .doseme-ad { color: #7fb2ff; }
 @media (hover: hover) and (pointer: fine) {
@@ -226,14 +226,15 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
   .dosemeler-masa { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (min-width: 1040px) {
-  .bolum.oyunlar { padding-top: 40px; }
-  .dosemeler-mini { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .bolum.oyunlar { padding-top: 14px; }   /* V029: 4'lü döşemeler daha uzun; 1920×1080'de ilk sıranın tanıtımı ilk ekranda kalsın */
+  .oyunlar-bas { margin-bottom: 12px; }
+  .dosemeler-mini { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .oyunlar-alt { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .grup-masa { grid-column: span 4; }
   .dosemeler-sehir { grid-template-columns: minmax(0, 1fr); }
 }
 
-/* Bu güncellemede (V027): oyun kartları (ilki geniş), denemedekiler rozetli, öne çıkan Şehirde Yarış, lobi şeridi, ufak yenilikler.
+/* Bu güncellemede (V029): oyun kartları (ilki geniş), Şamata Kart'ın pist şeridi, denemedekiler rozetli (3'lü), öne çıkan gökyüzü, ufak yenilikler.
    Kartlar tıklanmaz: üstüne gelince büyüme yok (yalnız galeri büyür). Her oyunun başlık rengi kendi lobisinin vurgusu. */
 .one-cikan { display: grid; gap: 20px; align-items: center; margin: 0 0 56px; }
 .one-cikan:last-child { margin-bottom: 0; }
@@ -261,7 +262,9 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 .kule h3 { color: var(--altin); }
 .mutfak h3 { color: var(--turuncu); }
 .basket h3 { color: var(--pembe); }
-.bomba h3 { color: #ff6b5a; }
+.bomba h3, .boks h3 { color: #ff6b5a; }
+.tenis h3 { color: var(--mavi); }
+.futbol h3 { color: #7fb2ff; }
 .samata h3 { color: #b48cff; }
 .rozet-deneme {
   position: absolute; top: 12px; left: 12px; font: .8rem/1 var(--baslik); letter-spacing: .1em; color: #2a1200;
@@ -271,7 +274,10 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
 .deneme-bas { margin: 46px 0 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
 .deneme-bas h3 { font: 1.7rem/1.1 var(--baslik); margin: 0; color: var(--turuncu); }
 .deneme-bas p { margin: 0; }
-.yaris { margin-top: 56px; }
+.yaris, .gok { margin-top: 56px; }
+.gok .one-yazi h3 { color: var(--altin); }
+.gok .one-gorsel { box-shadow: 0 18px 60px rgba(255, 138, 61, .22), var(--golge); }
+.oyun-yazi .ust-not { margin-bottom: .35em !important; }
 
 .lobiler { margin: 56px 0 0; }
 .lobi-yazi h3 { font: clamp(1.5rem, 4.4vw, 2rem)/1.1 var(--baslik); margin: 0 0 .35em; color: #fff; }
@@ -307,9 +313,16 @@ h3 { margin: .2em 0 .35em; font-size: 1.22rem; font-weight: 600; }
   .ufak-yenilikler h3 { margin-top: 14px; }
   .ufak-yenilikler p { margin-bottom: 16px; }
 }
+/* V029: #yeni'de iki kart. 720–1039'da ikincisi de ilki gibi geniş satır (yarım satır boş kalmasın) */
+@media (min-width: 720px) and (max-width: 1039px) {
+  .yeni-oyunlar .oyun-kart:nth-child(2):last-child { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: center; }
+  .yeni-oyunlar .oyun-kart:nth-child(2):last-child .oyun-gorsel, .yeni-oyunlar .oyun-kart:nth-child(2):last-child .oyun-gorsel img { height: 100%; }
+  .yeni-oyunlar .oyun-kart:nth-child(2):last-child .oyun-yazi { padding: 22px 26px; }
+}
 @media (min-width: 1040px) {
   .yeni-oyunlar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .yeni-oyunlar .oyun-kart:first-child { grid-column: span 2; }
+  .deneme-oyunlar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 /* özellik kartları */

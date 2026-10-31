@@ -1,6 +1,21 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV029",
+                         "tarih":  "2026-10-31",
+                         "baslik":  "Boks ve masa tenisi geldi (deneme), Şamata Kart tam sürüm, şehrin gökyüzü günün saatine göre",
+                         "maddeler":  [
+                                          "Boks (deneme sürümü): Universe Academy\u0027deki ringde 1\u0027e 1 ya da bota karşı; yandan kamera, gerçek boks eldivenleri, nakavt anı",
+                                          "Masa tenisi (deneme sürümü): Universe Academy oyun salonunda iki masa; raketi fareyle savur, yön / güç / dönüş senin vuruşunda; bota ya da arkadaşına karşı",
+                                          "Şamata Kart artık deneme değil: 6 pist (lobiden seç), drift sonrası turbo, nitro Sol Shift, yeni eşyalar (uçan terlik, şemsiye...), pistlerde gece efektleri",
+                                          "Arabalı Futbol: yeni top ve lobiden top seçimi, Q / E ile takla, Rocket League gibi çarpışma ve patlatma, yeni çarpma / vuruş sesleri, yeni gökyüzü, çim, skor tabelaları ve patlama efekti, gol tekrarında okunur TEKRAR geçişi, gol anındaki takılma azaldı",
+                                          "Bomba Meydanı: eller ve yumruklar BombSquad gibi (dönerek yumruk dahil), tutma / fırlatma yenilendi, yapışkan bomba artık savurmuyor, bomba türleri şeklinden belli; lobiden sonra kalan cızırtı sesi düzeldi",
+                                          "Şehrin gökyüzü günün saatine göre değişiyor (şafaktan geceye 7 gök); Boya Kapışması\u0027nda sabit, parlak öğle göğü",
+                                          "Mini oyunların şehir dışındaki alanları artık şehirden görünmüyor",
+                                          "Yeşilçam\u0027da masaya oturunca çevre sesleri (trafik, korna, kalabalık) kısılıyor; masanın kendi sesleri tam"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV028b",
                          "tarih":  "2026-10-29",
                          "baslik":  "V028\u0027e ek: Türk daması geldi, Yeşilçam masalarında bota ya da arkadaşına karşı",
