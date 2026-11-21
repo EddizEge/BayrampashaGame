@@ -1,6 +1,15 @@
 {
     "surumler":  [
                      {
+                         "surum":  "OnlineV029b",
+                         "tarih":  "2026-11-21",
+                         "baslik":  "V029\u0027a ek: yeni karakterler Ediz, Serkan ve Kuzen",
+                         "maddeler":  [
+                                          "Yeni karakterler: Ediz yenilendi (gerçek yüzü, saçı ve yeni gövdesiyle), Serkan (şapkasıyla) ve Kuzen eklendi; karakter seçiminde artık 8 karakter var",
+                                          "Karakterlerin kıyafetleri kumaş gibi mat, eller yürürken ve dururken daha doğal"
+                                      ]
+                     },
+                     {
                          "surum":  "OnlineV029",
                          "tarih":  "2026-10-31",
                          "baslik":  "Boks ve masa tenisi geldi (deneme), Şamata Kart tam sürüm, şehrin gökyüzü günün saatine göre",
